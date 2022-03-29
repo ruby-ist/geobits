@@ -1,0 +1,30 @@
+<div class="search-bar">
+	<div class="ui icon input">
+		<input type="text" placeholder="Search...">
+		<i class="search icon"></i>
+	</div>
+</div>
+
+<div class="bg-map">
+	<%= image_tag "Map.svg", height: 3876, width: 3420, class: "visible" %>
+	<%= image_tag "Map.png", height: 3876, width: 3420, class: "invisible" %>
+	<div class="tags"></div>
+</div>
+
+
+<div class="zoom-buttons">
+	<button data-action="click->hello#zoomin" class="ui compact icon button">
+		<i class="plus icon"></i>
+	</button>
+	<br/>
+	<button data-action="click->hello#zoomout" class="ui compact icon button">
+		<i class="minus icon"></i>
+	</button>
+</div>
+
+<div class="layer-button">
+	<button id="map-icon" data-action="click->hello#layer" class="ui compact icon button">
+		<span class="visible"><i class="map icon"></i></span>
+		<span class="invisible"><i class="map outline icon"></i></span>
+	</button>
+</div>
