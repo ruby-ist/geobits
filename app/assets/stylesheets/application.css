@@ -41,17 +41,46 @@ body{
     padding-top: 100px;
 }
 
+
+
 .search-bar{
     position: fixed;
     top: 0;
     left: 0;
     height: 80px;
     width: 100vw;
-    background-color: #F2F4F6;
     margin: 0;
     z-index: 100;
     text-align: center;
     padding: 20px;
+}
+
+.search-wrapper{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 6px 20px;
+    border-radius: 5px;
+}
+
+.suggestions{
+    text-align: center;
+}
+
+.suggestion-list{
+    margin: 0 auto;
+    padding: 10px 5%;
+    text-align: left;
+    list-style-type: none;
+    position: relative;
+    z-index: 101;
+    display: none;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.box-input{
+    width: 100%;
 }
 
 .tag{
@@ -97,4 +126,14 @@ body{
 
 .zoom-buttons .icon{
     margin: 5px;
+}
+
+@media screen and (max-width: 540px){
+    .search-wrapper{
+        width: 90%;
+    }
+
+    .box-input{
+        width: 100%;
+    }
 }

@@ -1,4 +1,5 @@
 class MapController < ApplicationController
+
   def index
   end
 
@@ -7,5 +8,22 @@ class MapController < ApplicationController
     tags = place_tags
     render json: tags
   end
+
+  def search
+    load "#{Rails.root}/lib/assets/index.rb"
+    buildings = guides[:buildings]
+    arr = []
+    buildings.each do |hash|
+      hash[:floors].each { |i| hash[:terms] += i[:rooms] }
+      hash[:terms].each do |i|
+        if i.downcase.include? params["query"].downcase
+          arr << {name: hash[:name], match: i}
+        end
+      end
+    end
+    render json: arr
+  end
+
+
 
 end
