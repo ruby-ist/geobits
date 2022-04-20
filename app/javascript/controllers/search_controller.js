@@ -4,11 +4,11 @@ import $ from "jquery"
 export default class extends Controller {
 	
 	connect() {
-		$('.bg-map').on("click scroll", function(){
+		$('.bg-map').on("click scroll", function () {
 			document.querySelector('.suggestion-list').style.display = "none";
 		});
 		
-		$('#search-bar').on("click", function(){
+		$('#search-bar').on("click", function () {
 			if (this.value !== "") {
 				document.querySelector('.suggestion-list').style.display = "block";
 			}
@@ -16,12 +16,11 @@ export default class extends Controller {
 	}
 	
 	
-	find(){
+	find() {
 		let value = document.querySelector('#search-bar').value;
 		if (value === "") {
 			document.querySelector('.suggestion-list').style.display = "none";
-		}
-		else {
+		} else {
 			var element = document.querySelector('.suggestion-list');
 			element.innerHTML = "";
 			$.ajax({
@@ -30,12 +29,11 @@ export default class extends Controller {
 				dataType: "json",
 				success: function (result) {
 					document.querySelector('.suggestion-list').style.display = "block";
-					if(result.length === 0){
+					if (result.length === 0) {
 						element.innerHTML = "No results found";
-					}
-					else {
+					} else {
 						for (let building of result) {
-							element.innerHTML += `<li><div class="match"> ${building["match"]} </div><div class="building-place">${building["name"]}</div></li><br>`
+							element.innerHTML += `<li data-action="click->hello#goto" data-hello-id-param="${building['id']}" ><div class="match"> ${building["match"]} </div><div class="building-place">${building["name"]}</div></li><br>`
 						}
 					}
 				}
