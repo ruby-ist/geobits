@@ -1,7 +1,7 @@
 <div class="search-bar" data-controller="search">
 	<div class="search-wrapper">
 		<div class="ui icon input box-input">
-			<input id="search-bar" type="text" placeholder="Search..." data-action="keyup->search#find">
+			<input id="search-bar" type="text" placeholder="Search..." data-action="change->search#find">
 			<i class="search icon"></i>
 		</div>
 		<div class="suggestions">
@@ -12,11 +12,11 @@
 </div>
 
 <div class="bg-map">
-	<%= image_tag "Map.svg", height: 3876, width: 3420, class: "visible" %>
-	<%= image_tag "Map.jpg", height: 3876, width: 3420, class: "invisible" %>
+	<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible" %>
+	<%= image_tag "Map.jpg", height: 3876, width: 3420, class: "the-map invisible" %>
 	<div class="tags"></div>
+	<div class="legends"></div>
 </div>
-
 
 <div class="zoom-buttons">
 	<button id="zoom-in-btn" data-action="click->hello#zoomin" class="ui compact icon button">

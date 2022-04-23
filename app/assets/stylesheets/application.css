@@ -50,7 +50,7 @@ body{
     height: 80px;
     width: 100vw;
     margin: 0;
-    z-index: 100;
+    z-index: 200;
     text-align: center;
     padding: 20px;
 }
@@ -78,10 +78,15 @@ body{
     text-align: left;
     list-style-type: none;
     position: relative;
-    z-index: 101;
+    z-index: 105;
     display: none;
     max-height: 70vh;
     overflow-y: scroll;
+}
+
+.building-place{
+    color: grey;
+    font-size: 0.8rem;
 }
 
 .box-input{
@@ -96,8 +101,9 @@ body{
     color: white;
     text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
     font-family: 'Inter', sans-serif;
-    width: 50px;
+    width: 60px;
     text-wrap: normal;
+    z-index: 103;
 }
 
 #main-parking{
@@ -148,6 +154,7 @@ body{
     font-weight: 500;
     visibility: hidden;
     transition: height 1s, visibility 1s;
+    z-index: 104;
 }
 
 .place-title{
@@ -253,6 +260,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.legend{
+    height: 32px;
+    width: 32px;
+    position: absolute;
 }
 
 @media screen and (max-width: 540px){

@@ -1,5 +1,6 @@
 import {Controller} from "@hotwired/stimulus"
 import $ from "jquery"
+import Hammer from "hammerjs"
 
 export default class extends Controller {
 	zoomlevel = 4;
@@ -10,6 +11,42 @@ export default class extends Controller {
 		document.querySelector('.bg-map').scrollTop = 1100;
 		document.querySelector('.bg-map').scrollLeft = 1600;
 		this.setTags(4);
+		this.setLegends(4);
+		
+		document.addEventListener('mousemove', (event) => {
+			const {
+				clientX,
+				clientY
+			} = event
+			console.log(document.querySelector('.bg-map').scrollTop + clientY - 20, document.querySelector('.bg-map').scrollLeft + clientX - 20);
+		});
+		
+		let that = this;
+		let maps = document.querySelectorAll('.bg-map .the-map');
+		for (let map of maps) {
+			let hammertime = new Hammer(map, {touchAction: "auto"});
+			hammertime.on("doubletap", function () {
+				if (that.zoomlevel === 4) {
+					let elements = document.querySelectorAll(".bg-map .the-map");
+					for (let element of elements) {
+						element.height = 1148.4444444444446;
+						element.width = 1013.3333333333334;
+					}
+					that.zoomlevel = 1;
+					that.setTags(1);
+					that.setLegends(1);
+				} else {
+					that.zoomin();
+				}
+			});
+		}
+		
+		let details = document.querySelector('.place-details');
+		let hammertime = new Hammer(details);
+		hammertime.get('swipe').set({ direction: Hammer.DIRECTION_VERTICAL });
+		hammertime.on("swipedown", function(){
+			that.hide();
+		});
 	}
 	
 	setTags(num) {
@@ -28,6 +65,21 @@ export default class extends Controller {
 		});
 	}
 	
+	setLegends(num){
+		let element = document.querySelector(".legends");
+		element.innerHTML = "";
+		$.ajax({
+			type: "GET",
+			url: `/map/legends/${num}`,
+			dataType: "json",
+			success: function (result) {
+				for(let legend of result){
+					element.innerHTML += `<div class="legend-circle"><img src=${legend["link"]} class='legend' id='${legend["id"]}' style='top: ${legend["top"]} ; left: ${legend["left"]};'></div>`;
+				}
+			}
+		});
+	}
+	
 	mycallback(result) {
 		$('.place-title')[0].innerHTML = result["name"];
 		$('.place-main')[0].innerHTML = result["main"];
@@ -39,7 +91,6 @@ export default class extends Controller {
 			element.innerHTML = "";
 		}
 		let num = 0;
-		console.log(this.floors);
 		for (let floor of this.floors) {
 			element1.innerHTML += `<div class="floor" data-action="click->hello#slide" data-hello-num-param=${num} >${floor["name"]}</div>`;
 			num += 1;
@@ -50,6 +101,9 @@ export default class extends Controller {
 				element2[num].innerHTML += `<li>${room}</li>`;
 			}
 			num += 1;
+		}
+		if($('.classes.visible')[0] !== undefined) {
+			$('.classes.visible')[0].classList.remove('visible');
 		}
 		element2[0].classList.add('visible');
 		$('.floor')[0].classList.add('active');
@@ -64,7 +118,6 @@ export default class extends Controller {
 			"visibility": "visible",
 			"bottom": "42vh"
 		});
-		
 		
 		$.ajax({
 			type: "GET",
@@ -93,7 +146,8 @@ export default class extends Controller {
 			"visibility": "hidden",
 			"bottom": "0px"
 		});
-		
+		$('.classes.visible')[0].classList.remove('visible');
+		$('.floor.active')[0].classList.remove('active');
 		globalThis.floors = [];
 		$('.place-title')[0].innerHTML = "";
 		$('.place-main')[0].innerHTML = "";
@@ -102,7 +156,7 @@ export default class extends Controller {
 	}
 	
 	zoomin() {
-		let elements = document.querySelectorAll(".bg-map img");
+		let elements = document.querySelectorAll(".bg-map .the-map");
 		let flag = 0;
 		for (let element of elements) {
 			if (element.height < 3800 && element.width < 3400) {
@@ -114,11 +168,12 @@ export default class extends Controller {
 		if (flag === 1) {
 			this.zoomlevel += 1;
 			this.setTags(this.zoomlevel);
+			this.setLegends(this.zoomlevel);
 		}
 	}
 	
 	zoomout() {
-		let elements = document.querySelectorAll(".bg-map img");
+		let elements = document.querySelectorAll(".bg-map .the-map");
 		let flag = 0;
 		for (let element of elements) {
 			if (element.height > 1148.4444444444446 && element.width > 1013.3333333333334) {
@@ -130,22 +185,24 @@ export default class extends Controller {
 		if (flag === 1) {
 			this.zoomlevel -= 1;
 			this.setTags(this.zoomlevel);
+			this.setLegends(this.zoomlevel);
 		}
 	}
 	
 	layer() {
-		$('.bg-map img').toggle();
+		$('.bg-map .the-map').toggle();
 		$('.layer-button span').toggle();
 	}
 	
 	goto(event) {
-		let elements = document.querySelectorAll(".bg-map img");
+		let elements = document.querySelectorAll(".bg-map .the-map");
 		for (let element of elements) {
 			element.height = 3876;
 			element.width = 3420;
 		}
 		this.zoomlevel = 4;
 		this.setTags(4);
+		this.setLegends(4);
 		let id = event.params["id"];
 		$.ajax({
 			type: "GET",

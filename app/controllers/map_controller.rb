@@ -9,17 +9,31 @@ class MapController < ApplicationController
     render json: tags
   end
 
+  def legends
+    load "#{Rails.root}/lib/assets/legends_#{params[:level]}.rb"
+    render json: place_legends
+  end
+
   def search
     load "#{Rails.root}/lib/assets/index.rb"
     buildings = guides[:buildings]
     arr = []
     buildings.each do |hash|
-      hash[:floors].each { |i| hash[:terms] += i[:rooms] }
+
       hash[:terms].each do |i|
         if i.downcase.include? params["query"].downcase
-          arr << { id: hash[:id], name: hash[:name], match: i}
+          arr << { id: hash[:id], name: hash[:name], match: i, floor: "tagged" }
         end
       end
+
+      hash[:floors].each do |floor|
+        floor[:rooms].each do |i|
+          if i.downcase.include? params["query"].downcase
+            arr << { id: hash[:id], name: hash[:name], match: i, floor: floor[:name] }
+          end
+        end
+      end
+
     end
     render json: arr
   end

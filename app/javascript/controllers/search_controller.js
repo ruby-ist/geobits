@@ -7,12 +7,6 @@ export default class extends Controller {
 		$('.bg-map').on("click scroll", function () {
 			document.querySelector('.suggestion-list').style.display = "none";
 		});
-		
-		$('#search-bar').on("click", function () {
-			if (this.value !== "") {
-				document.querySelector('.suggestion-list').style.display = "block";
-			}
-		})
 	}
 	
 	
@@ -33,7 +27,7 @@ export default class extends Controller {
 						element.innerHTML = "No results found";
 					} else {
 						for (let building of result) {
-							element.innerHTML += `<li data-action="click->hello#goto" data-hello-id-param="${building['id']}" ><div class="match"> ${building["match"]} </div><div class="building-place">${building["name"]}</div></li><br>`
+							element.innerHTML += `<li data-action="click->hello#goto" data-hello-id-param="${building['id']}" ><div class="match"> ${building["match"]} </div><div class="building-place">${building["floor"]}, ${building["name"]}</div></li><br>`
 						}
 					}
 				}
