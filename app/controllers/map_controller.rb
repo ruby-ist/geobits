@@ -47,6 +47,7 @@ class MapController < ApplicationController
 
   def details
     load "#{Rails.root}/lib/assets/index.rb"
+    load "#{Rails.root}/lib/assets/zoom_level_#{params[:level]}.rb"
     buildings = guides[:buildings]
     buildings.each do |hash|
       if hash[:id] == params[:id]
@@ -54,7 +55,9 @@ class MapController < ApplicationController
         return
       end
     end
-    render json: []
+    tags = place_tags[:tags]
+    place = tags.detect{ |i| i[:id] == params[:id] }
+    render json: {"name": place[:name], "main": place[:name], "floors": [ {"name": "Ground", "rooms": [ place[:name] ] } ] }
   end
 
 end
