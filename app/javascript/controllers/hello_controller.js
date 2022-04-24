@@ -121,7 +121,7 @@ export default class extends Controller {
 		
 		$.ajax({
 			type: "GET",
-			url: `map/details/${event.target.id}`,
+			url: `map/details/${event.target.id}?level=${this.zoomlevel}`,
 			dataType: "json",
 			success: this.mycallback
 		})
