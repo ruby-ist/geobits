@@ -21,7 +21,7 @@ def place_legends
     {
       id: "medical-icon",
       link: ActionController::Base.helpers.image_path("medical.svg"),
-      top: "2905px",
+      top: "2885px",
       left: "475px"
     },
     {
@@ -40,12 +40,12 @@ def place_legends
       id: "food-icon-1",
       link: ActionController::Base.helpers.image_path("food.svg"),
       top: "2755px",
-      left: "2310px"
+      left: "2410px"
     },
     {
       id: "food-icon-2",
       link: ActionController::Base.helpers.image_path("food.svg"),
-      top: "3350px",
+      top: "3400px",
       left: "975px"
     },
     {
@@ -99,7 +99,7 @@ def place_legends
     {
       id: "wifi-icon-2",
       link: ActionController::Base.helpers.image_path("wifi.svg"),
-      top: "2610px",
+      top: "2630px",
       left: "1280px"
     },
     {
@@ -141,13 +141,13 @@ def place_legends
     {
       id: "parking-icon-1",
       link: ActionController::Base.helpers.image_path("parking.svg"),
-      top: "2705px",
+      top: "2735px",
       left: "795px"
     },
     {
       id: "parking-icon-2",
       link: ActionController::Base.helpers.image_path("parking.svg"),
-      top: "1000px",
+      top: "1020px",
       left: "2000px"
     },
     {
@@ -173,6 +173,90 @@ def place_legends
       link: ActionController::Base.helpers.image_path("chess.svg"),
       top: "2935px",
       left: "1770px"
+    },
+    {
+      id: "juice-icon",
+      link: ActionController::Base.helpers.image_path("juice.svg"),
+      top: "2930px",
+      left: "2075px"
+    },
+    {
+      id: "snack-icon-4",
+      link: ActionController::Base.helpers.image_path("snacks.svg"),
+      top: "2930px",
+      left: "2105px"
+    },
+    {
+      id: "snack-icon-5",
+      link: ActionController::Base.helpers.image_path("snacks.svg"),
+      top: "2970px",
+      left: "740px"
+    },
+    {
+      id: "sapphire-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3130px",
+      left: "2275px"
+    },
+    {
+      id: "ruby-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3140px",
+      left: "2775px"
+    },
+    {
+      id: "pearl-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3335px",
+      left: "2835px"
+    },
+    {
+      id: "diamond-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "2355px",
+      left: "2650px"
+    },
+    {
+      id: "emerald-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "2405px",
+      left: "2245px"
+    },
+    {
+      id: "coral-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "2595px",
+      left: "1972px"
+    },
+    {
+      id: "Ganga-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3190px",
+      left: "740px"
+    },
+    {
+      id: "Narmadha-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3200px",
+      left: "505px"
+    },
+    {
+      id: "Kaveri-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3385px",
+      left: "635px"
+    },
+    {
+      id: "Yamuna-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3150px",
+      left: "1180px"
+    },
+    {
+      id: "Bhavani-icon",
+      link: ActionController::Base.helpers.image_path("hostel.svg"),
+      top: "3475px",
+      left: "1275px"
     },
   ]
 end

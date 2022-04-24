@@ -256,3 +256,12 @@ def place_tags
 	]
   }
 end
+
+=begin
+     {
+        "id": "",
+        "name": "",
+        "top": "px",
+        "left": "px"
+      },
+=end

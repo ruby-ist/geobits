@@ -74,7 +74,7 @@ export default class extends Controller {
 			dataType: "json",
 			success: function (result) {
 				for(let legend of result){
-					element.innerHTML += `<div class="legend-circle"><img src=${legend["link"]} class='legend' id='${legend["id"]}' style='top: ${legend["top"]} ; left: ${legend["left"]};'></div>`;
+					element.innerHTML += `<img src=${legend["link"]} class='legend' id='${legend["id"]}' style='top: ${legend["top"]} ; left: ${legend["left"]};'>`;
 				}
 			}
 		});

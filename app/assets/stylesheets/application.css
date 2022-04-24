@@ -60,6 +60,10 @@ body{
     font-size: 1.2rem;
 }
 
+#search-bar:focus{
+    border: 2px solid mediumslateblue;
+}
+
 .search-wrapper{
     width: 70%;
     margin: auto;
@@ -68,20 +72,33 @@ body{
     border-radius: 5px;
 }
 
+.search-icon{
+    z-index: 202;
+}
+
 .suggestions{
     text-align: center;
 }
 
 .suggestion-list{
     margin: 0 auto;
-    padding: 10px 5%;
+    padding: 10px 0;
     text-align: left;
     list-style-type: none;
     position: relative;
-    z-index: 105;
+    z-index: 106;
     display: none;
     max-height: 70vh;
     overflow-y: scroll;
+}
+
+.suggestion-list li{
+    padding: 1% 5%;
+    margin: 0;
+}
+
+.suggestion-list li:hover{
+    background-color: #EEEEEE;
 }
 
 .building-place{
@@ -115,12 +132,14 @@ body{
     position: fixed;
     right: 20px;
     bottom: 20px;
+    z-index: 104;
 }
 
 .layer-button{
     position: fixed;
     left: 40px;
     bottom: 40px;
+    z-index: 104;
 }
 
 #map-icon{
@@ -154,7 +173,7 @@ body{
     font-weight: 500;
     visibility: hidden;
     transition: height 1s, visibility 1s;
-    z-index: 104;
+    z-index: 105;
 }
 
 .place-title{

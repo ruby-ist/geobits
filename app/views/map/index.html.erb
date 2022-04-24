@@ -2,7 +2,7 @@
 	<div class="search-wrapper">
 		<div class="ui icon input box-input">
 			<input id="search-bar" type="text" placeholder="Search..." data-action="change->search#find">
-			<i class="search icon"></i>
+			<i class="search link icon" data-action="click->search#find"></i>
 		</div>
 		<div class="suggestions">
 			<ul class="suggestion-list">
@@ -12,8 +12,8 @@
 </div>
 
 <div class="bg-map">
-	<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible" %>
-	<%= image_tag "Map.jpg", height: 3876, width: 3420, class: "the-map invisible" %>
+	<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible", oncontextmenu: "return false;" %>
+	<%= image_tag "Map.jpg", height: 3876, width: 3420, class: "the-map invisible", oncontextmenu: "return false;" %>
 	<div class="tags"></div>
 	<div class="legends"></div>
 </div>
