@@ -8,18 +8,18 @@ export default class extends Controller {
 	rand = 0;
 	
 	connect() {
-		document.querySelector('.bg-map').scrollTop = 1100;
-		document.querySelector('.bg-map').scrollLeft = 1600;
+		document.querySelector('.bg-map').scrollTop = 1400;
+		document.querySelector('.bg-map').scrollLeft = 1800;
 		this.setTags(4);
 		this.setLegends(4);
-		
-		document.addEventListener('mousemove', (event) => {
-			const {
-				clientX,
-				clientY
-			} = event
-			console.log(document.querySelector('.bg-map').scrollTop + clientY - 20, document.querySelector('.bg-map').scrollLeft + clientX - 20);
-		});
+		$('#pin').hide();
+		// document.addEventListener('mousemove', (event) => {
+		// 	const {
+		// 		clientX,
+		// 		clientY
+		// 	} = event
+		// 	console.log(document.querySelector('.bg-map').scrollTop + clientY - 20, document.querySelector('.bg-map').scrollLeft + clientX - 20);
+		// });
 		
 		let that = this;
 		let maps = document.querySelectorAll('.bg-map .the-map');
@@ -35,6 +35,13 @@ export default class extends Controller {
 					that.zoomlevel = 1;
 					that.setTags(1);
 					that.setLegends(1);
+					let element = $('#pin');
+					if(element[0].style.display !== "none") {
+						element.css({
+							"left": `${parseInt(element[0].style.left.slice(0, -2)) / 3.375}px`,
+							"top": `${parseInt(element[0].style.top.slice(0, -2)) / 3.375}px`
+						});
+					}
 				} else {
 					that.zoomin();
 				}
@@ -148,6 +155,7 @@ export default class extends Controller {
 		});
 		$('.classes.visible')[0].classList.remove('visible');
 		$('.floor.active')[0].classList.remove('active');
+		$('#pin').hide();
 		globalThis.floors = [];
 		$('.place-title')[0].innerHTML = "";
 		$('.place-main')[0].innerHTML = "";
@@ -169,6 +177,15 @@ export default class extends Controller {
 			this.zoomlevel += 1;
 			this.setTags(this.zoomlevel);
 			this.setLegends(this.zoomlevel);
+			let element = $('#pin');
+			if(element[0].style.display !== "none") {
+				element.css({
+					"left": `${parseInt(element[0].style.left.slice(0, -2)) * 1.5}px`,
+					"top": `${parseInt(element[0].style.top.slice(0, -2)) * 1.5}px`
+				});
+			}
+			document.querySelector('.bg-map').scrollTop *= 1.5;
+			document.querySelector('.bg-map').scrollLeft *= 1.5;
 		}
 	}
 	
@@ -186,6 +203,15 @@ export default class extends Controller {
 			this.zoomlevel -= 1;
 			this.setTags(this.zoomlevel);
 			this.setLegends(this.zoomlevel);
+			let element = $('#pin');
+			if(element[0].style.display !== "none") {
+				element.css({
+					"left": `${parseInt(element[0].style.left.slice(0, -2)) / 1.5}px`,
+					"top": `${parseInt(element[0].style.top.slice(0, -2)) / 1.5}px`
+				});
+			}
+			document.querySelector('.bg-map').scrollTop /= 1.5;
+			document.querySelector('.bg-map').scrollLeft /= 1.5;
 		}
 	}
 	
@@ -212,7 +238,13 @@ export default class extends Controller {
 				document.querySelector('.suggestion-list').style.display = "none";
 				document.querySelector('.bg-map').scrollTop = parseInt(result["top"].slice(0, -2)) - screen.height / 2 + 150;
 				document.querySelector('.bg-map').scrollLeft = parseInt(result["left"].slice(0, -2)) - screen.width / 2;
-				$(`#${id}`).click();
+				let element = $('#pin');
+				element.show();
+				element.css({
+					"left": `${result["left"].slice(0,-2) -32}px`,
+					"top": result["top"]
+				});
+				setTimeout(() => $(`#${id}`).click(), 1000);
 			}
 		});
 	}

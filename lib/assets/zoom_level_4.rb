@@ -517,6 +517,24 @@ def place_tags
         "top": "1290px",
         "left": "1955px"
       },
+      {
+        "id": "guest-house",
+        "name": "BIT Guest House",
+        "top": "605px",
+        "left": "2048px"
+      },
+      {
+        "id": "bus",
+        "name": "Day Scholar Buses",
+        "top": "1240px",
+        "left": "1365px"
+      },
+      {
+        "id": "herbal-garden",
+        "name": "Herbal Garden",
+        "top": "1930px",
+        "left": "1035px"
+      },
     ]
   }
 end

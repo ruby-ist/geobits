@@ -270,6 +270,7 @@ body{
     transform: translateX(-50%);
     visibility: hidden;
     transition: bottom 1s, visibility 1s;
+    z-index: 105;
 }
 
 .down-arrow{
@@ -279,12 +280,20 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 105;
 }
 
 .legend{
     height: 32px;
     width: 32px;
     position: absolute;
+}
+
+#pin{
+    position: absolute;
+    z-index: 103;
+    width: 32px;
+    height: 32px;
 }
 
 @media screen and (max-width: 540px){

@@ -81,13 +81,13 @@ def place_legends
     {
       id: "atm-icon-2",
       link: ActionController::Base.helpers.image_path("atm.svg"),
-      top: "1000px",
-      left: "1810px"
+      top: "885px",
+      left: "1815px"
     },
     {
       id: "atm-icon-3",
       link: ActionController::Base.helpers.image_path("atm.svg"),
-      top: "1050px",
+      top: "920px",
       left: "1814px"
     },
     {

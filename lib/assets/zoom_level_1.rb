@@ -121,6 +121,12 @@ def place_tags
         "top": "280px",
         "left": "570px"
       },
+      {
+        "id": "bus",
+        "name": "Day Scholar Buses",
+        "top": "348px",
+        "left": "370px"
+      },
     ]
   }
 end

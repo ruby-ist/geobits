@@ -110,7 +110,7 @@ def guides
         "name": "AS Block (Left)",
         "main": "AS Block",
         "about": "",
-        "terms": ["Special Labs", "Dept of ISE"],
+        "terms": ["Special Labs", "Dept of ISE", "AS Block"],
         "floors": [
           {
             "name": "Ground Floor",
@@ -122,7 +122,7 @@ def guides
           },
           {
             "name": "Second Floor",
-            "rooms": ["Discussion Room", "Conference Room", "AR/VR Lab", "Design & Prototyping Lab", "Hackathon Lab", "Integrated AI Lab", "Sensor Lab", "Vision Engineering Lab", "Embedded Systems Lab", "UAV Lab", "UUV Lab", "Robotics Lab", "Automation Lab"]
+            "rooms": ["Discussion Room", "Conference Room", "Data Science Lab", "Open Source Lab", "AR/VR Lab", "Design & Prototyping Lab", "Hackathon Lab", "Integrated AI Lab", "Sensor Lab", "Vision Engineering Lab", "Embedded Systems Lab", "UAV Lab", "UUV Lab", "Robotics Lab", "Automation Lab"]
           }
         ]
       },
@@ -132,7 +132,7 @@ def guides
         "name": "AS Block (Right)",
         "main": "AS Block",
         "about": "",
-        "terms": ["Special Labs", "Dept of CSBS"],
+        "terms": ["Special Labs", "Dept of CSBS", "AS Block"],
         "floors": [
           {
             "name": "Base Floor",
@@ -298,7 +298,7 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["Class rooms", "labs"]
+            "rooms": ["Class rooms", "Garment Construction Lab 1", "Garment Construction Lab 2"]
           }
         ]
       }
