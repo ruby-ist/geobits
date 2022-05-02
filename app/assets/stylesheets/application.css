@@ -346,6 +346,10 @@ body{
     color: black;
 }
 
+section{
+    padding: 70px 10vw;
+}
+
 #about{
     min-height: 80vh;
     width: 100vw;
@@ -371,7 +375,6 @@ body{
 
 #legends{
     background: #f6f6f6;
-    padding: 70px 10vw;
 }
 
 #legends h1{
@@ -408,7 +411,6 @@ body{
 }
 
 #contributors{
-    padding: 70px 10vw;
     background: radial-gradient(farthest-corner at 200px 100px, #b4b4b4,#ffffff);
 }
 
@@ -442,6 +444,7 @@ body{
 .credits-body{
     padding-left: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .name-list{
@@ -459,6 +462,7 @@ footer{
     display: flex;
     margin: 50px 0 20px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .contact-name{
@@ -490,5 +494,95 @@ hr{
 
     .place-details{
         width: 100vw;
+    }
+
+    .title-bar{
+        padding: 20px 8vw;
+    }
+
+    .title{
+        font-size: 2rem;
+    }
+
+    .visit-btn{
+        font-size: 1.4rem;
+        padding: 5px 15px;
+    }
+
+    .map-logo{
+        height: 45vw;
+        width: 45vw;
+    }
+
+    .para{
+        font-size: 1.3rem;
+        text-align: justify;
+    }
+
+    section{
+        padding: 40px 10vw;
+    }
+
+    #about{
+        padding: 100px 10vw;
+    }
+
+    .visit-btn.bigger{
+        font-size: 1.5rem;
+    }
+
+    #legends h1{
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .legends-list{
+        justify-content: left;
+    }
+
+    .explained-legend{
+        height: 32px;
+        width: 32px;
+    }
+
+    .legend-name{
+        font-size: 1.3rem;
+    }
+
+    #contributors h1{
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    #contributors h2{
+        font-size: 1.3rem;
+    }
+
+    #contributors li{
+        font-size: 1.2rem;
+    }
+
+    #footer{
+        padding: 30px 10vw 20px;
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    .contact-info{
+        margin: 20px 50px 30px;
+        justify-content: flex-start;
+    }
+
+    .contact-name{
+        font-size: 1rem;
+    }
+
+    hr{
+        margin: 30px 0 20px;
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: 0.7rem;
     }
 }
