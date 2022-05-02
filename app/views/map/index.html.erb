@@ -1,57 +1,59 @@
-<div class="search-bar" data-controller="search">
-	<div class="search-wrapper">
-		<div class="ui icon input box-input">
-			<input id="search-bar" type="text" placeholder="Search..." data-action="change->search#find">
-			<i class="search link icon" data-action="click->search#find"></i>
-		</div>
-		<div class="suggestions">
-			<ul class="suggestion-list">
-			</ul>
+<div data-controller="hello">
+	<div class="search-bar" data-controller="search">
+		<div class="search-wrapper">
+			<div class="ui icon input box-input">
+				<input id="search-bar" type="text" placeholder="Search..." data-action="change->search#find">
+				<i class="search link icon" data-action="click->search#find"></i>
+			</div>
+			<div class="suggestions">
+				<ul class="suggestion-list">
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
-
-<div class="bg-map">
-	<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible", oncontextmenu: "return false;" %>
-	<%= image_tag "Map.jpg", height: 3876, width: 3420, class: "the-map invisible", oncontextmenu: "return false;" %>
-	<div class="tags"></div>
-	<div class="legends"></div>
-	<%= image_tag "tag.svg", id: "pin" %>
-</div>
-
-<div class="zoom-buttons">
-	<button id="zoom-in-btn" data-action="click->hello#zoomin" class="ui compact icon button">
-		<i class="plus icon"></i>
-	</button>
-	<br/>
-	<button id="zoom-out-btn" data-action="click->hello#zoomout" class="ui compact icon button">
-		<i class="minus icon"></i>
-	</button>
-</div>
-
-<div class="layer-button">
-	<button id="map-icon" data-action="click->hello#layer" class="ui compact icon button">
-		<span class="visible"><i class="map icon"></i></span>
-		<span class="invisible"><i class="map outline icon"></i></span>
-	</button>
-</div>
-
-
-<div class="place-details">
-	<div class="place-title"></div>
-	<div class="place-main"></div>
 	
-	<div class="floors">
-		<div class="underline"></div>
+	<div class="bg-map">
+		<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible", oncontextmenu: "return false;" %>
+		<%= image_tag "Map.jpg", height: 3876, width: 3420, class: "the-map invisible", oncontextmenu: "return false;" %>
+		<div class="tags"></div>
+		<div class="legends"></div>
+		<%= image_tag "tag.svg", id: "pin" %>
 	</div>
 	
-	<ul class="classes"></ul>
-	<ul class="classes"></ul>
-	<ul class="classes"></ul>
-	<ul class="classes"></ul>
+	<div class="zoom-buttons">
+		<button id="zoom-in-btn" data-action="click->hello#zoomin" class="ui compact icon button">
+			<i class="plus icon"></i>
+		</button>
+		<br/>
+		<button id="zoom-out-btn" data-action="click->hello#zoomout" class="ui compact icon button">
+			<i class="minus icon"></i>
+		</button>
+	</div>
 	
-</div>
-
-<div class="get-down-btn" data-action="click->hello#hide">
-	<%= image_tag("down.svg", class: "down-arrow") %>
+	<div class="layer-button">
+		<button id="map-icon" data-action="click->hello#layer" class="ui compact icon button">
+			<span class="visible"><i class="map icon"></i></span>
+			<span class="invisible"><i class="map outline icon"></i></span>
+		</button>
+	</div>
+	
+	
+	<div class="place-details">
+		<div class="place-title"></div>
+		<div class="place-main"></div>
+		
+		<div class="floors">
+			<div class="underline"></div>
+		</div>
+		
+		<ul class="classes"></ul>
+		<ul class="classes"></ul>
+		<ul class="classes"></ul>
+		<ul class="classes"></ul>
+	
+	</div>
+	
+	<div class="get-down-btn" data-action="click->hello#hide">
+		<%= image_tag("down.svg", class: "down-arrow") %>
+	</div>
 </div>

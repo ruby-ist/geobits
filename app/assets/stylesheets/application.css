@@ -296,6 +296,189 @@ body{
     height: 32px;
 }
 
+
+/*About Page CSS Styles*/
+
+.title-bar{
+    width: 100vw;
+    display: flex;
+    padding: 3.5vh 5vw;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: radial-gradient(#f6f6f666, #f6f6f655, #f6f6f633);
+    /*background: #f6f6f699;*/
+    backdrop-filter: saturate(180%) blur(10px);
+}
+
+.title{
+    font-family: 'Yeon Sung', cursive;
+    color: mediumslateblue;
+    font-size: 3rem;
+}
+
+.visit-btn{
+    color: black;
+    border: 1px solid black;
+    background: transparent;
+    border-radius: 40px;
+    padding: 4px 20px;
+    font-size: 1.7rem;
+    font-family: 'Overlock', cursive;
+    transition: background-color 300ms;
+}
+
+.visit-btn:hover, .visit-btn:active{
+    background: mediumslateblue;
+}
+
+.visit-btn.bigger{
+    font-size: 1.8rem;
+    padding: 8px 27px;
+    color: mediumslateblue;
+    border-color: mediumslateblue;
+    margin-top: 50px;
+}
+
+.visit-btn.bigger:hover, .visit-btn.bigger.active{
+    color: black;
+}
+
+#about{
+    min-height: 80vh;
+    width: 100vw;
+    background: radial-gradient(#000000BB, #000000EE , #000000);
+    padding: 15vh 25vw 10vh;
+    text-align: center;
+}
+
+.para{
+    font-size: 2rem;
+    color: mediumslateblue;
+    margin-top: 10px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: 'Overlock', cursive;
+    font-weight: 500;
+}
+
+.map-logo{
+    width: 250px;
+    height: 250px;
+}
+
+#legends{
+    background: #f6f6f6;
+    padding: 70px 10vw;
+}
+
+#legends h1{
+    color: #474A56;
+    margin-bottom: 50px;
+    font-size: 2.6rem;
+}
+
+.legends-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.legend-box{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    width: 300px;
+}
+
+.explained-legend{
+    height: 48px;
+    width: 48px;
+    display: inline;
+}
+
+.legend-name{
+    display: inline;
+    margin-left: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+#contributors{
+    padding: 70px 10vw;
+    background: radial-gradient(farthest-corner at 200px 100px, #b4b4b4,#ffffff);
+}
+
+#contributors h1{
+    font-size: 2.5rem;
+    color: mediumslateblue;
+    margin-bottom: 50px;
+}
+
+#contributors ul{
+    list-style: none;
+}
+
+#contributors li{
+    font-size: 1.2rem;
+}
+
+#contributors ul li:before{
+    content: "\2022";
+    color: mediumslateblue;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+#contributors h2{
+    font-weight: 500;
+}
+
+.credits-body{
+    padding-left: 40px;
+    display: flex;
+}
+
+.name-list{
+    margin-right: 50px;
+}
+
+footer{
+    background: mediumslateblue;
+    padding: 70px 10vw 40px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contact-info{
+    display: flex;
+    margin: 50px 0 20px;
+    justify-content: space-around;
+}
+
+.contact-name{
+    display: inline;
+    margin-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+}
+
+hr{
+    margin: 80px 0 30px;
+    border-color: black;
+}
+
+.copyright{
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    margin: 10px;
+}
+
 @media screen and (max-width: 540px){
     .search-wrapper{
         width: 95%;

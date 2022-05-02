@@ -5,7 +5,7 @@ import Hammer from "hammerjs"
 export default class extends Controller {
 	zoomlevel = 4;
 	floors = [];
-	rand = 0;
+
 	
 	connect() {
 		document.querySelector('.bg-map').scrollTop = 1400;
