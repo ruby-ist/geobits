@@ -13,11 +13,11 @@
 	</div>
 	
 	<div class="bg-map">
-		<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible", oncontextmenu: "return false;" %>
-		<%= image_tag "Map.jpg", height: 3876, width: 3420, class: "the-map invisible", oncontextmenu: "return false;" %>
+		<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible", oncontextmenu: "return false;", alt: "SVG map" %>
+		<%= image_tag "Map.webp", height: 3876, width: 3420, class: "the-map invisible", oncontextmenu: "return false;", alt: "Satellite Map" %>
 		<div class="tags"></div>
 		<div class="legends"></div>
-		<%= image_tag "tag.svg", id: "pin" %>
+		<%= image_tag "tag.svg", id: "pin", alt: "pin-point" %>
 	</div>
 	
 	<div class="zoom-buttons">
@@ -54,6 +54,6 @@
 	</div>
 	
 	<div class="get-down-btn" data-action="click->hello#hide">
-		<%= image_tag("down.svg", class: "down-arrow") %>
+		<%= image_tag "down.svg", class: "down-arrow", alt: "Down arrow" %>
 	</div>
 </div>
