@@ -14,7 +14,7 @@
 	
 	<div class="bg-map">
 		<%= image_tag "Map.svg", height: 3876, width: 3420, class: "the-map visible", oncontextmenu: "return false;", alt: "SVG map" %>
-		<%= image_tag "Map.webp", height: 3876, width: 3420, class: "the-map invisible", oncontextmenu: "return false;", alt: "Satellite Map" %>
+		<%= image_tag "Map.webp", height: 3876, width: 3420, class: "the-map invisible", oncontextmenu: "return false;", alt: "Satellite Map", loading: "lazy" %>
 		<div class="tags"></div>
 		<div class="legends"></div>
 		<%= image_tag "tag.svg", id: "pin", alt: "pin-point" %>
