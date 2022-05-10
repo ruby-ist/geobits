@@ -81,7 +81,7 @@ def guides
 
       {
         "id": "mechanic-back",
-        "name": "Mechanic BLock",
+        "name": "Mechanic Block",
         "main": "Mechanic Block",
         "about": "",
         "terms": ["dept of mech"],
@@ -107,7 +107,7 @@ def guides
 
       {
         "id": "as-main-left",
-        "name": "AS Block (Left)",
+        "name": "AS Block",
         "main": "AS Block",
         "about": "",
         "terms": ["Special Labs", "Dept of ISE", "AS Block"],
@@ -129,14 +129,14 @@ def guides
 
       {
         "id": "as-main-right",
-        "name": "AS Block (Right)",
+        "name": "Special Labs",
         "main": "AS Block",
         "about": "",
         "terms": ["Special Labs", "Dept of CSBS", "AS Block"],
         "floors": [
           {
             "name": "Base Floor",
-            "rooms": ["Hybrid Human Powered Vehicle", "Agricultural Vehicle", "On Road Off Road Vehicle", "MF Lab", "Sustainable Civil Engineering Materials Lab", "Kart Vehicle", "Electrical Vehicle"]
+            "rooms": ["Manufacturing and Fabrication Lab", "Hybrid Human Powered Vehicle", "Agricultural Vehicle", "On Road Off Road Vehicle", "MF Lab", "Sustainable Civil Engineering Materials Lab", "Kart Vehicle", "Electrical Vehicle"]
           },
           {
             "name": "Ground floor",
@@ -176,6 +176,28 @@ def guides
       },
 
       {
+        "id": "as-rib-2",
+        "name": "AS rib 2",
+        "main": "AS Block",
+        "about": "",
+        "terms": ["Dept of Chemistry"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Department of Chemistry", "Faculty Hall", "Chemistry Laboratory - 1"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Language Lab", "ELCC Cell", "Faculty Hall"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Physics Laboratory - 1", "Faculty Hall"]
+          }
+        ]
+      },
+
+      {
         "id": "as-rib-3",
         "name": "AS rib 3",
         "main": "AS Block",
@@ -193,6 +215,28 @@ def guides
           {
             "name": "Second Floor",
             "rooms": ["CE 34", "CE 35", "CE 36"]
+          }
+        ]
+      },
+
+      {
+        "id": "as-rib-4",
+        "name": "AS rib 4",
+        "main": "AS Block",
+        "about": "",
+        "terms": ["Dept of of physics"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Faculty Hall", "Signal Processing Lab", "PCB Design Lab", "PCB Fabrication Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Department of Physics", "Physics Laboratory - 2", "Faculty  Hall"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Chemistry Laboratory - 2", "Faculty Hall"]
           }
         ]
       },
@@ -220,6 +264,28 @@ def guides
       },
 
       {
+        "id": "as-rib-6",
+        "name": "AS rib 6",
+        "main": "AS Block",
+        "about": "",
+        "terms": ["Dept of Civil", "Dept of biomedical"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Faculty Hall", "Soil Mechanic Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["CADD & Survey Lab", "Survey & Environmental Lab"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Biochemistry Lab", "Physiology Lab"]
+          }
+        ]
+      },
+
+      {
         "id": "as-rib-7",
         "name": "AS rib 7",
         "main": "AS Block",
@@ -237,6 +303,28 @@ def guides
           {
             "name": "Second Floor",
             "rooms": ["EC 34", "EC 35", "EC 36"]
+          }
+        ]
+      },
+
+      {
+        "id": "as-rib-8",
+        "name": "AS rib 8",
+        "main": "AS Block",
+        "about": "",
+        "terms": ["Dept of ECE"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Analog electronic & IC Lab", "Advanced Communication System Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Network Lab", "PG VLSI Lab", "Product Development Lab"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Analog & Digital Lab", "Microwave & Optical Lab"]
           }
         ]
       },
@@ -264,6 +352,28 @@ def guides
       },
 
       {
+        "id": "as-rib-10",
+        "name": "AS rib 10",
+        "main": "AS Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Chemical Processing Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Apparel Testing Lab", "Textile Testing Lab", "Faculty Hall"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["VLSI Design Lab", "Digital Electronic Lab", "Microprocessor & Microcontroller Lab"]
+          }
+        ]
+      },
+
+      {
         "id": "as-rib-11",
         "name": "AS rib 11",
         "main": "AS Block",
@@ -286,6 +396,28 @@ def guides
       },
 
       {
+        "id": "as-rib-12",
+        "name": "AS rib 12",
+        "main": "AS Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Weaving and Knitting Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Food Technology Lab"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Food Analysis and Instrumentation Facility", "Food Technology Lab - 2"]
+          }
+        ]
+      },
+
+      {
         "id": "fashion-centre",
         "name": "Fashion Resource Centre",
         "main": "AS Block",
@@ -301,7 +433,393 @@ def guides
             "rooms": ["Class rooms", "Garment Construction Lab 1", "Garment Construction Lab 2"]
           }
         ]
-      }
+      },
+
+      {
+        "id": "spinning-lab",
+        "name": "Spinning Lab",
+        "main": "AS Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Spinning Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Spinning Lab"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-block-1",
+        "name": "IB Block",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of maths", "Dept of Bio-Tech"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Department of Mathematics", "IB 101", "IB 102", "IB 103", "IB 104", "Maths Faculty Hall - 1", "Maths Faculty Hall -2", "Biotech Seminar Hall"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Genetic Engineering Lab", "Molecular Biology Lab", "Bio-polymer Lab", "Bio Material Synthesis and Analysis Lab", "Bio-prospecting Lab", "Department of Bio-Technology", "Plant Issue Culture Lab", "Faculty Hall"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["IB 201", "IB 202", "IB 203", "IB 204", "IB 205", "IB 206", "Maths Faculty Hall - 5"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-block-2",
+        "name": "IB Block",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of Bio-Tech"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["IB 105", "IB 106", "IB 107", "IB 108", "IB 109", "IB 110", "IB 111", "IB 112", "Bio-process and Bio-product Lab", "BIT Integrated Plant Research Facility", "Bio Energy Research Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Fungal Bio-diversity and Bio-resources Research Lab", "Lecture Hall IB 118", "Nano Biotechnology Lab", "Molecular Diagnostic and Bacterial Pathogenemis Lab", "Downstream Processing Lab", "Cell Biology Lab", "Microbiology Lab", "Chemical Engineering Lab", "Bio Process Lab", "Bio Separation Lab", "Fume Head Room", "Bio-Organic Chemistry Lab", "Instrumental method of analysis Lab", "Immunology Lab"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["IB 207", "IB 208", "IB 210", "IB 211", "IB 212", "Maths Faculty Hall - 6"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-1",
+        "name": "IB rib 1",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of EIE"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Department of Electronics and Instrumentation Engineering", "Faculty Hall", "Yoga Centre"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["CT 21", "CT 22", "CT 23"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["AIDS 32", "AIDS 31"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-2",
+        "name": "IB rib 2",
+        "main": "IB Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Technology Business Incubator - BIT TBI", "ß,α cave", "Repository"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Idea Pad", "Mission Control", "Pageant Theatre", "Proto Lounge"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Fab Lab", "Venture Space", "Mentor Studio", "Launch Pad"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-3",
+        "name": "IB rib 3",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of AIDS"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Department of Artificial Intelligence and Data Science", "CT & AIDS Library", "MNC"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["CT 24", "CT 25", "CT 26", "CT Faculty Hall 4"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["AIDS 33", "AIDS 34", "AIDS 35"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-4",
+        "name": "IB rib 4",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of CT", "Dept of AIDS"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Centre of Excellence in Industrial Automation", "Internet of Things Lab", "ZSN Computech", "E-yantra Robotics Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Department of Computer Technology", "CT Labs"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Department of Artificial Intelligence and Data Science", "AIDS Labs"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-5",
+        "name": "IB rib 5",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of EEE"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Department of Electrical and Electronics Engineering", "Faculty Hall", "EEE Seminar Hall"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["EE 21", "EE 22", "EE 23"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["EE 32", "EE 31"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-6",
+        "name": "IB rib 6",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of EIE"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["EIE Computer Centre", "Process Control Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Sensor and Transducer Lab", "Industrial Instrumentation Lab", "Electronics Lab"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Conference Hall - EIE", "Smart Class Room - EIE"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-7",
+        "name": "IB rib 7",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of EEE"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Faculty Hall"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["EE 24", "EE 25", "EE 26"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["EE 33", "EE 34", "EE 35"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-8",
+        "name": "IB rib 8",
+        "main": "IB Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["BIT - Gurugualam", "Electronics Lab", "Electronics Machines Lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Faculty Hall"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Power Electronics and Drives Lab"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-9",
+        "name": "IB rib 9",
+        "main": "IB Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Xerox printout", "Seminar Hall Mech"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["AG 21", "AG 22", "AG 23"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["AG 31", "AG 32"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-10",
+        "name": "IB rib 10",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["Dept of EEE"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["BIT Gurugualam"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Faculty Hall", "EEE Computer Centre"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Store Room", "EEE Tutorial Hall"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-11",
+        "name": "IB rib 11",
+        "main": "IB Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Department of Humanities", "Chairman Cabin"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["AG 24", "AG 25", "AG 26"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["AG 33", "AG 34", "AG 35"]
+          }
+        ]
+      },
+
+      {
+        "id": "ib-rib-12",
+        "name": "IB rib 12",
+        "main": "IB Block",
+        "about": "",
+        "terms": [],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["BIT Gurugualam", "Wielding and pm lab"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Home Appliances Lab", "Salzar BIT Innovation Centre", "Basic EEE Lab"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["PLC Lab", "A&D Lab", "Thermal Drawing Hall"]
+          }
+        ]
+      },
+
+      {
+        "id": "internet-centre",
+        "name": "Internet Centre",
+        "main": "IB Block",
+        "about": "",
+        "terms": ["COE", "Chrome OS"],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Internet Centre"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Controller of Examination (COE)"]
+          }
+        ]
+      },
+
+      {
+        "id": "placement-and-training",
+        "name": "Placement and Training Cell",
+        "main": "IB Block",
+        "about": "",
+        "terms": [""],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Department of Training and Placement"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Vedhanayagam Auditorium"]
+          },
+        ]
+      },
+
+      {
+        "id": "indoor-gym",
+        "name": "Gym",
+        "main": "Hostel Gate",
+        "about": "",
+        "terms": [""],
+        "floors": [
+          {
+            "name": "Ground Floor",
+            "rooms": ["Hostel Manager Cabin", "Visitor Hall"]
+          },
+          {
+            "name": "First Floor",
+            "rooms": ["Boys Gym"]
+          },
+          {
+            "name": "Second Floor",
+            "rooms": ["Yoga Centre"]
+          },
+        ]
+      },
+
+
     ]
   }
 end

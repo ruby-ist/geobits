@@ -18,17 +18,18 @@ class MapController < ApplicationController
     load "#{Rails.root}/lib/assets/index.rb"
     buildings = guides[:buildings]
     arr = []
+    query = formatted params["query"]
     buildings.each do |hash|
 
       hash[:terms].each do |i|
-        if i.downcase.include? params["query"].downcase
+        if formatted(i).include? query
           arr << { id: hash[:id], name: hash[:name], match: i, floor: "tagged" }
         end
       end
 
       hash[:floors].each do |floor|
         floor[:rooms].each do |i|
-          if i.downcase.include? params["query"].downcase
+          if formatted(i).include? query
             arr << { id: hash[:id], name: hash[:name], match: i, floor: floor[:name] }
           end
         end
@@ -58,6 +59,12 @@ class MapController < ApplicationController
     tags = place_tags[:tags]
     place = tags.detect{ |i| i[:id] == params[:id] }
     render json: {"name": place[:name], "main": place[:name], "floors": [ {"name": "Ground", "rooms": [ place[:name] ] } ] }
+  end
+
+  private
+
+  def formatted(str)
+    str.downcase.gsub(' ', '')
   end
 
 end

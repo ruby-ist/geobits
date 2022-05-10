@@ -2,25 +2,25 @@ def place_tags
   {
     "tags": [
       {
-        "id": "sunflower-block",
+        "id": "sf-block",
         "name": "Sunflower Block",
         "top": "850px",
         "left": "900px"
       },
       {
-        "id": "as-block",
+        "id": "as-main-left",
         "name": "AS Block",
         "top": "990px",
         "left": "690px"
       },
       {
-        "id": "ib-block",
+        "id": "ib-block-2",
         "name": "IB Block",
         "top": "990px",
         "left": "510px"
       },
       {
-        "id": "mechanics",
+        "id": "mechanic-back",
         "name": "Mechanic Block",
         "top": "950px",
         "left": "930px"
@@ -104,7 +104,7 @@ def place_tags
         "left": "730px"
       },
       {
-        "id": "special-lab",
+        "id": "as-main-right",
         "name": "Special Labs",
         "top": "800px",
         "left": "690px"

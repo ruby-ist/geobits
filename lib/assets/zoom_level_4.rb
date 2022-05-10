@@ -146,9 +146,9 @@ def place_tags
         "left": "1375px"
       },
       {
-        "id": "vedhanayagam-auditorium",
-        "name": "Vedhanayagam Auditorium",
-        "top": "2625px",
+        "id": "placement-and-training",
+        "name": "Placement and Training Cell",
+        "top": "2605px",
         "left": "1075px"
       },
       {
@@ -185,7 +185,7 @@ def place_tags
         "id": "ib-rib-3",
         "name": "IB rib 3",
         "top": "2095px",
-        "left": "1237px"
+        "left": "1240px"
       },
       {
         "id": "ib-rib-5",
@@ -372,6 +372,12 @@ def place_tags
         "name": "PET Room",
         "top": "2967px",
         "left": "1748px"
+      },
+      {
+        "id": "recreation-hall",
+        "name": "Recreation hall",
+        "top": "2967px",
+        "left": "1435px"
       },
       {
         "id": "girls-basketball-court",

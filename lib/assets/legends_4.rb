@@ -13,6 +13,12 @@ def place_legends
       left: "2000px"
     },
     {
+      id: "library-icon-3",
+      link: ActionController::Base.helpers.image_path("library.svg"),
+      top: "2080px",
+      left: "1230px"
+    },
+    {
       id: "gym-icon",
       link: ActionController::Base.helpers.image_path("gym.svg"),
       top: "2685px",
