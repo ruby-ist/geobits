@@ -128,20 +128,6 @@ body{
     left: 1950px;
 }
 
-.zoom-buttons{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    z-index: 104;
-}
-
-.layer-button{
-    position: fixed;
-    left: 40px;
-    bottom: 40px;
-    z-index: 104;
-}
-
 #map-icon{
     background-color: lightgreen;
 }
@@ -152,10 +138,6 @@ body{
 
 .invisible{
     display: none;
-}
-
-.zoom-buttons .icon{
-    margin: 5px;
 }
 
 .place-details{
@@ -294,6 +276,34 @@ body{
     z-index: 103;
     width: 32px;
     height: 32px;
+    display: none;
+}
+
+.zoom-buttons{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 104;
+}
+
+.layer-button{
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    z-index: 104;
+}
+
+.icon-button{
+    width: 44px;
+    height: 44px;
+    background: mediumslateblue;
+    border: 1px solid black;
+    border-radius: 7px;
+    box-shadow: 0 0 10px #474A56;
+}
+
+.icon-button:hover, .icon-button:active{
+    background: #6a60dd;
 }
 
 
@@ -309,8 +319,8 @@ body{
     top: 0;
     left: 0;
     background: radial-gradient(#f6f6f666, #f6f6f655, #f6f6f633);
-    /*background: #f6f6f699;*/
     backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
 }
 
 .title{

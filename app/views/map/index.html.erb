@@ -21,19 +21,22 @@
 	</div>
 	
 	<div class="zoom-buttons">
-		<button id="zoom-in-btn" data-action="click->hello#zoomin" class="ui compact icon button">
-			<i class="plus icon"></i>
+		<button class="icon-button" data-action="click->hello#zoomin">
+			<%= image_tag "plus.svg" %>
 		</button>
-		<br/>
-		<button id="zoom-out-btn" data-action="click->hello#zoomout" class="ui compact icon button">
-			<i class="minus icon"></i>
+		<br/><br/>
+		<button class="icon-button" data-action="click->hello#zoomout">
+			<%= image_tag "minus.svg" %>
 		</button>
 	</div>
 	
 	<div class="layer-button">
-		<button id="map-icon" data-action="click->hello#layer" class="ui compact icon button">
-			<span class="visible"><i class="map icon"></i></span>
-			<span class="invisible"><i class="map outline icon"></i></span>
+		<button class="icon-button" >
+			<%= link_to about_path do image_tag "info.svg" end  %>
+		</button>
+		<br/><br/>
+		<button class="icon-button" data-action="click->hello#layer">
+			<%= image_tag "layer.svg" %>
 		</button>
 	</div>
 	

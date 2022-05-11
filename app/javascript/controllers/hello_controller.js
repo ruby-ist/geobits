@@ -46,6 +46,22 @@ export default class extends Controller {
 					that.zoomin();
 				}
 			});
+			hammertime.get('press').set({ time: 1000 } );
+			
+			hammertime.on("press", function(event){
+				let X = event.srcEvent.offsetX;
+				let Y = event.srcEvent.offsetY;
+				let element = $('#pin');
+				element.show();
+				element.css({
+					"left": `${X - 16}px`,
+					"top": `${Y - 36}px`,
+				});
+			});
+			
+			hammertime.on('tap', function (){
+				$('#pin').hide();
+			});
 		}
 		
 		let details = document.querySelector('.place-details');
@@ -174,9 +190,6 @@ export default class extends Controller {
 			}
 		}
 		if (flag === 1) {
-			this.zoomlevel += 1;
-			this.setTags(this.zoomlevel);
-			this.setLegends(this.zoomlevel);
 			let element = $('#pin');
 			if(element[0].style.display !== "none") {
 				element.css({
@@ -186,6 +199,12 @@ export default class extends Controller {
 			}
 			document.querySelector('.bg-map').scrollTop *= 1.5;
 			document.querySelector('.bg-map').scrollLeft *= 1.5;
+			this.zoomlevel += 1;
+			setTimeout(() => {
+				this.setTags(this.zoomlevel);
+				this.setLegends(this.zoomlevel);
+			}, 150);
+			
 		}
 	}
 	
@@ -200,9 +219,6 @@ export default class extends Controller {
 			}
 		}
 		if (flag === 1) {
-			this.zoomlevel -= 1;
-			this.setTags(this.zoomlevel);
-			this.setLegends(this.zoomlevel);
 			let element = $('#pin');
 			if(element[0].style.display !== "none") {
 				element.css({
@@ -212,6 +228,11 @@ export default class extends Controller {
 			}
 			document.querySelector('.bg-map').scrollTop /= 1.5;
 			document.querySelector('.bg-map').scrollLeft /= 1.5;
+			this.zoomlevel -= 1;
+			setTimeout(() => {
+				this.setTags(this.zoomlevel);
+				this.setLegends(this.zoomlevel);
+			}, 150);
 		}
 	}
 	
