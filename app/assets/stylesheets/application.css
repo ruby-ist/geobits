@@ -281,16 +281,18 @@ body{
 
 .zoom-buttons{
     position: fixed;
-    right: 40px;
+    right: 30px;
     bottom: 40px;
     z-index: 104;
+    transition: bottom 1s;
 }
 
 .layer-button{
     position: fixed;
-    left: 40px;
+    left: 30px;
     bottom: 40px;
     z-index: 104;
+    transition: bottom 1s;
 }
 
 .icon-button{
@@ -500,6 +502,11 @@ hr{
 
     .box-input{
         width: 100%;
+    }
+
+    .icon-button{
+        height: 40px;
+        width: 40px;
     }
 
     .place-details{

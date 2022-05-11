@@ -141,6 +141,9 @@ export default class extends Controller {
 			"visibility": "visible",
 			"bottom": "42vh"
 		});
+		$('.layer-button, .zoom-buttons').css({
+			"bottom": "42vh"
+		});
 		
 		$.ajax({
 			type: "GET",
@@ -168,6 +171,9 @@ export default class extends Controller {
 		$('.get-down-btn').css({
 			"visibility": "hidden",
 			"bottom": "0px"
+		});
+		$('.layer-button, .zoom-buttons').css({
+			"bottom": "40px"
 		});
 		$('.classes.visible')[0].classList.remove('visible');
 		$('.floor.active')[0].classList.remove('active');
@@ -203,7 +209,7 @@ export default class extends Controller {
 			setTimeout(() => {
 				this.setTags(this.zoomlevel);
 				this.setLegends(this.zoomlevel);
-			}, 150);
+			}, 1000);
 			
 		}
 	}
@@ -232,7 +238,7 @@ export default class extends Controller {
 			setTimeout(() => {
 				this.setTags(this.zoomlevel);
 				this.setLegends(this.zoomlevel);
-			}, 150);
+			}, 1000);
 		}
 	}
 	
