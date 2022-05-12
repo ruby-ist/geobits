@@ -318,18 +318,19 @@ body{
 }
 
 .url-container{
-    border: 2px solid mediumslateblue;
     display: flex;
-    border-radius: 4px;
     padding-right: -1px;
 }
 
 .pin-url{
-    border: none;
+    border-top: 2px solid mediumslateblue;
+    border-left: 2px solid mediumslateblue;
+    border-bottom: 2px solid mediumslateblue;
+    border-right: none;
     background: #C4C1E0;
     padding: 3px 0 3px 6px;
     color: mediumslateblue;
-    border-radius: 2px 0 0 2px;
+    border-radius: 4px 0 0 4px;
     font-family: 'Inter', sans-serif;
 }
 
@@ -339,9 +340,12 @@ body{
 
 .copy-btn{
     background: mediumslateblue;
-    border: none;
+    border-top: 2px solid mediumslateblue;
+    border-right: 2px solid mediumslateblue;
+    border-bottom: 2px solid mediumslateblue;
+    border-left: none;
     padding: 3px 6px;
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 4px 4px 0;
     width: 60px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;

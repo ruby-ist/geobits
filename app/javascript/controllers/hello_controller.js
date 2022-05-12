@@ -57,7 +57,7 @@ export default class extends Controller {
 				let element = $('#pin');
 				let urlBox = $('.url-box');
 				let url = $('.pin-url');
-				url[0].value = `localhost:3000?pin=true&level=${that.zoomlevel}&left=${X}&top=${Y}`;
+				url[0].value = `geobits.onrender.com?pin=true&level=${that.zoomlevel}&left=${X}&top=${Y}`;
 				element.css({
 					"left": `${X - 16}px`,
 					"top": `${Y - 36}px`,
