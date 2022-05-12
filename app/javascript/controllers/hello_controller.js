@@ -7,6 +7,21 @@ export default class extends Controller {
 	zoomlevel = this.levelValue;
 	floors = [];
 	
+	initialize(){
+		setTimeout(() => {
+			$('.instruction').css({
+				"opacity": "0",
+				"visibility": "hidden",
+				"transition": "visibility 0s 7s, opacity 7s linear"
+			})
+		}, 5000);
+		setTimeout(()=>{
+			$('.instruction').css({
+				"display": "none"
+			})
+		}, 5500);
+	}
+	
 	connect() {
 		this.setZoom(this.levelValue);
 		document.querySelector('.bg-map').scrollTop = this.topValue  - screen.height / 2 + 150;
@@ -84,6 +99,10 @@ export default class extends Controller {
 		hammertime.on("swipedown", function(){
 			that.hide();
 		});
+	}
+	
+	close(){
+		$('.instruction').hide();
 	}
 	
 	setZoom(level){

@@ -512,6 +512,10 @@ section{
     margin-right: 50px;
 }
 
+.name-list ul li{
+    font-family: 'Quicksand', sans-serif;
+}
+
 footer{
     background: mediumslateblue;
     padding: 70px 10vw 40px;
@@ -542,6 +546,67 @@ hr{
     font-family: 'Special Elite', cursive;
     font-size: 1rem;
     margin: 10px;
+}
+
+.info{
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Instruction box*/
+
+.instruct-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 200;
+    width: 40%;
+    opacity: 1;
+    transition: opacity 10s;
+    visibility: visible;
+}
+
+.instruction{
+    border: 1px solid mediumslateblue;
+    border-radius: 5px;
+    background: #F5F7FA;
+    color: #929AAB;
+    position: relative;
+    padding: 8% 5% 3% 5%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 0 10px #474A56;
+    font-size: 1.2rem;
+}
+
+.close-btn{
+    position: absolute;
+    top: 7%;
+    right: 4%;
+    color: #f5f7fa;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 900;
+    background: mediumslateblue;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.close-btn:hover, .close-btn:focus, .close-btn:active{
+    color: #f5f7fa;
+    background: #6a60dd;
+}
+
+.notes hr{
+    margin: 5px 0 20px;
+    height: 1px;
+    border: none;
+    background: mediumslateblue;
+}
+
+.last-info{
+    color: mediumslateblue;
 }
 
 @media screen and (max-width: 540px){
@@ -650,5 +715,23 @@ hr{
     .copyright{
         text-align: center;
         font-size: 0.7rem;
+    }
+
+    .credits-body{
+        padding-left: 10px;
+    }
+
+    .instruct-box{
+        width: 80%;
+    }
+
+    .instruction{
+        padding: 12% 6% 3%;
+        font-size: 1rem;
+    }
+
+    .close-btn{
+        top: 15px;
+        right: 20px;
     }
 }
