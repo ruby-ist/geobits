@@ -3,16 +3,25 @@ import $ from "jquery"
 import Hammer from "hammerjs"
 
 export default class extends Controller {
-	zoomlevel = 4;
+	static values = { level: Number, top: Number, left: Number, pinned: Boolean};
+	zoomlevel = this.levelValue;
 	floors = [];
-
 	
 	connect() {
-		document.querySelector('.bg-map').scrollTop = 1400;
-		document.querySelector('.bg-map').scrollLeft = 1800;
-		this.setTags(4);
-		this.setLegends(4);
-		$('#pin').hide();
+		this.setZoom(this.levelValue);
+		document.querySelector('.bg-map').scrollTop = this.topValue  - screen.height / 2 + 150;
+		document.querySelector('.bg-map').scrollLeft = this.leftValue - screen.width / 2;
+		let pin = $('#pin');
+		if(this.pinnedValue){
+			pin.css({
+				"left": `${this.leftValue - 16}px`,
+				"top": `${this.topValue - 36}px`,
+			});
+			pin.show();
+		}
+		else {
+			pin.hide();
+		}
 		// document.addEventListener('mousemove', (event) => {
 		// 	const {
 		// 		clientX,
@@ -27,14 +36,9 @@ export default class extends Controller {
 			let hammertime = new Hammer(map, {touchAction: "auto"});
 			hammertime.on("doubletap", function () {
 				if (that.zoomlevel === 4) {
-					let elements = document.querySelectorAll(".bg-map .the-map");
-					for (let element of elements) {
-						element.height = 1148.4444444444446;
-						element.width = 1013.3333333333334;
-					}
-					that.zoomlevel = 1;
-					that.setTags(1);
-					that.setLegends(1);
+					if((map.width / 3.375 < screen.width) || (map.height / 3.375 < screen.height))
+						return;
+					that.setZoom(1);
 					let element = $('#pin');
 					if(element[0].style.display !== "none") {
 						element.css({
@@ -47,20 +51,30 @@ export default class extends Controller {
 				}
 			});
 			hammertime.get('press').set({ time: 1000 } );
-			
 			hammertime.on("press", function(event){
 				let X = event.srcEvent.offsetX;
 				let Y = event.srcEvent.offsetY;
 				let element = $('#pin');
-				element.show();
+				let urlBox = $('.url-box');
+				let url = $('.pin-url');
+				url[0].value = `localhost:3000?pin=true&level=${that.zoomlevel}&left=${X}&top=${Y}`;
 				element.css({
 					"left": `${X - 16}px`,
 					"top": `${Y - 36}px`,
 				});
+				element.show();
+				urlBox.css({
+					"left": `${X}px`,
+					"top": `${Y + 2}px`,
+					"transform": "translateX(-50%)"
+				});
+				urlBox.show();
+				$(".copy-btn")[0].innerHTML = "Copy";
 			});
 			
 			hammertime.on('tap', function (){
 				$('#pin').hide();
+				$('.url-box').hide();
 			});
 		}
 		
@@ -70,6 +84,25 @@ export default class extends Controller {
 		hammertime.on("swipedown", function(){
 			that.hide();
 		});
+	}
+	
+	setZoom(level){
+		let height = 3876;
+		let width = 3420;
+		let i = 4;
+		while(i > level){
+			height /= 1.5;
+			width /= 1.5;
+			i -= 1;
+		}
+		let elements = document.querySelectorAll(".bg-map .the-map");
+		for (let element of elements) {
+			element.height = height;
+			element.width = width;
+		}
+		this.zoomlevel = level;
+		this.setTags(level);
+		this.setLegends(level);
 	}
 	
 	setTags(num) {
@@ -216,6 +249,8 @@ export default class extends Controller {
 	
 	zoomout() {
 		let elements = document.querySelectorAll(".bg-map .the-map");
+		if((elements[0].width / 1.5 < screen.width) || (elements[0].height / 1.5 < screen.height))
+			return;
 		let flag = 0;
 		for (let element of elements) {
 			if (element.height > 1148.4444444444446 && element.width > 1013.3333333333334) {
@@ -248,14 +283,7 @@ export default class extends Controller {
 	}
 	
 	goto(event) {
-		let elements = document.querySelectorAll(".bg-map .the-map");
-		for (let element of elements) {
-			element.height = 3876;
-			element.width = 3420;
-		}
-		this.zoomlevel = 4;
-		this.setTags(4);
-		this.setLegends(4);
+		this.setZoom(4);
 		let id = event.params["id"];
 		$.ajax({
 			type: "GET",

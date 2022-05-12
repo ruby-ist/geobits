@@ -1,8 +1,8 @@
-<div data-controller="hello">
+<div data-controller="hello" data-hello-level-value="<%= @level %>" data-hello-top-value="<%= @top %>" data-hello-left-value="<%= @left %>" data-hello-pinned-value="<%= @pinned %>">
 	<div class="search-bar" data-controller="search">
 		<div class="search-wrapper">
 			<div class="ui icon input box-input">
-				<input id="search-bar" type="text" placeholder="Search..." data-action="change->search#find" autocapitalize="off">
+				<input id="search-bar" type="text" placeholder="Search..." data-action="change->search#find" autocomplete="off">
 				<i class="search link icon" data-action="click->search#find"></i>
 			</div>
 			<div class="suggestions">
@@ -18,6 +18,12 @@
 		<div class="tags"></div>
 		<div class="legends"></div>
 		<%= image_tag "tag.svg", id: "pin", alt: "pin-point" %>
+		<div class="url-box" data-controller="clipboard">
+			<div class="url-container">
+				<input data-clipboard-target="url" class="pin-url" value="localhost:3000"/>
+				<button data-action="click->clipboard#copy" class="copy-btn">Copy</button>
+			</div>
+		</div>
 	</div>
 	
 	<div class="zoom-buttons">

@@ -1,7 +1,17 @@
 class MapController < ApplicationController
 
   def index
-
+    if params["level"]
+      @level = params["level"]
+      @left = params["left"]
+      @top = params["top"]
+      @pinned = params["pin"]
+    else
+      @level = 4
+      @left = 1950
+      @top = 1800
+      @pinned = false
+    end
   end
 
   def tags

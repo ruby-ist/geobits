@@ -159,6 +159,7 @@ body{
 }
 
 .place-title{
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 1.65rem;
     font-weight: 500;
     margin-bottom: 7px;
@@ -305,6 +306,50 @@ body{
 }
 
 .icon-button:hover, .icon-button:active{
+    background: #6a60dd;
+}
+
+.url-box{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 103;
+    display: none;
+}
+
+.url-container{
+    border: 2px solid mediumslateblue;
+    display: flex;
+    border-radius: 4px;
+    padding-right: -1px;
+}
+
+.pin-url{
+    border: none;
+    background: #C4C1E0;
+    padding: 3px 0 3px 6px;
+    color: mediumslateblue;
+    border-radius: 2px 0 0 2px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pin-url:focus{
+    outline: none;
+}
+
+.copy-btn{
+    background: mediumslateblue;
+    border: none;
+    padding: 3px 6px;
+    border-radius: 0 2px 2px 0;
+    width: 60px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #2E2F30;
+    font-size: 0.9rem;
+}
+
+.copy-btn:hover, .copy-btn:active{
     background: #6a60dd;
 }
 
