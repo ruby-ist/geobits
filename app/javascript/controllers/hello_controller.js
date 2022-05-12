@@ -57,7 +57,7 @@ export default class extends Controller {
 				let element = $('#pin');
 				let urlBox = $('.url-box');
 				let url = $('.pin-url');
-				url[0].value = `geobits.herokuapp.com?pin=true&level=${that.zoomlevel}&left=${X}&top=${Y}`;
+				url[0].value = `https://geobits.herokuapp.com?pin=true&level=${that.zoomlevel}&left=${X}&top=${Y}`;
 				element.css({
 					"left": `${X - 16}px`,
 					"top": `${Y - 36}px`,
