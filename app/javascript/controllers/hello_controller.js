@@ -14,12 +14,12 @@ export default class extends Controller {
 				"visibility": "hidden",
 				"transition": "visibility 0s 7s, opacity 7s linear"
 			})
-		}, 5000);
+		}, 8000);
 		setTimeout(()=>{
 			$('.instruction').css({
 				"display": "none"
 			})
-		}, 5500);
+		}, 8500);
 	}
 	
 	connect() {
@@ -47,13 +47,24 @@ export default class extends Controller {
 		
 		let that = this;
 		let maps = document.querySelectorAll('.bg-map .the-map');
+		let newlevel = 4;
 		for (let map of maps) {
 			let hammertime = new Hammer(map, {touchAction: "auto"});
 			hammertime.on("doubletap", function () {
 				if (that.zoomlevel === 4) {
-					if((map.width / 3.375 < screen.width) || (map.height / 3.375 < screen.height))
+					if((map.width / 3.375 > screen.width) && (map.height / 3.375 > screen.height)) {
+						newlevel = 1;
+					}
+					else if((map.width / 2.25 > screen.width) && (map.height / 2.25 > screen.height)){
+						newlevel = 2;
+					}
+					else if((map.width / 1.5 > screen.width) && (map.height / 1.5 > screen.height)){
+						newlevel = 3;
+					}
+					else{
 						return;
-					that.setZoom(1);
+					}
+					that.setZoom(newlevel);
 					let element = $('#pin');
 					if(element[0].style.display !== "none") {
 						element.css({
@@ -90,6 +101,28 @@ export default class extends Controller {
 			hammertime.on('tap', function (){
 				$('#pin').hide();
 				$('.url-box').hide();
+			});
+			
+			let isDown = false;
+			let startX;
+			let scrollLeft;
+			map.addEventListener('mousedown', (e) => {
+				isDown = true;
+				startX = e.pageX - document.querySelector('.bg-map').offsetLeft;
+				scrollLeft = document.querySelector('.bg-map').scrollLeft;
+			});
+			map.addEventListener('mouseleave', () => {
+				isDown = false;
+			});
+			map.addEventListener('mouseup', () => {
+				isDown = false;
+			});
+			map.addEventListener('mousemove', (e) => {
+				if(!isDown) return;
+				e.preventDefault();
+				const x = e.pageX - document.querySelector('.bg-map').offsetLeft;
+				const walk = (x - startX); //scroll-fast
+				document.querySelector('.bg-map').scrollLeft = scrollLeft - walk;
 			});
 		}
 		
