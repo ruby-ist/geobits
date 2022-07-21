@@ -37,13 +37,13 @@ export default class extends Controller {
 		else {
 			pin.hide();
 		}
-		// document.addEventListener('mousemove', (event) => {
-		// 	const {
-		// 		clientX,
-		// 		clientY
-		// 	} = event
-		// 	console.log(document.querySelector('.bg-map').scrollTop + clientY - 20, document.querySelector('.bg-map').scrollLeft + clientX - 20);
-		// });
+		document.addEventListener('mousemove', (event) => {
+			const {
+				clientX,
+				clientY
+			} = event
+			console.log(document.querySelector('.bg-map').scrollTop + clientY - 20, document.querySelector('.bg-map').scrollLeft + clientX - 20);
+		});
 		
 		let that = this;
 		let maps = document.querySelectorAll('.bg-map .the-map');

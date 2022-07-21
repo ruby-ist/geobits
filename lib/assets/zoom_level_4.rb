@@ -541,6 +541,12 @@ def place_tags
         "top": "1930px",
         "left": "1035px"
       },
+      {
+          "id": "atm-1",
+          "name": "ATM",
+          "top": "905px",
+          "left": "1790px"
+      },
     ]
   }
 end
