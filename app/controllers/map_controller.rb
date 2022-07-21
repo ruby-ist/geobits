@@ -27,26 +27,35 @@ class MapController < ApplicationController
 
   def search
     load "#{Rails.root}/lib/assets/index.rb"
+    load "#{Rails.root}/lib/assets/zoom_level_4.rb"
     buildings = guides[:buildings]
+    tags = place_tags[:tags]
     arr = []
     query = formatted params["query"]
     buildings.each do |hash|
 
       hash[:terms].each do |i|
         if formatted(i).include? query
-          arr << { id: hash[:id], name: hash[:name], match: i, floor: "tagged" }
+          arr << { id: hash[:id], name: hash[:name], match: i, floor: "tagged", floor_no: 0 }
         end
       end
 
       hash[:floors].each do |floor|
         floor[:rooms].each do |i|
           if formatted(i).include? query
-            arr << { id: hash[:id], name: hash[:name], match: i, floor: floor[:name] }
+            arr << { id: hash[:id], name: hash[:name], match: i, floor: floor[:name], floor_no: hash[:floors].index(floor) }
           end
         end
       end
-
     end
+
+    tags.each do |tag|
+      if formatted(tag[:name]).include? query
+        arr << {id: tag[:id], name: tag[:name], match: tag[:name], floor: "tagged", floor_no: 0}
+      end
+    end
+
+
     render json: arr
   end
 
