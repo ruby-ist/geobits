@@ -85,8 +85,10 @@ class MapController < ApplicationController
   end
 
   def direction
-    from = params["from"]
-    to = params["to"]
+    load "#{Rails.root}/lib/assets/junction_points.rb"
+    points = junctions
+    from = points.find{ |point| point[:surroundings].include? params["from"] }[:id]
+    to = points.find{ |point| point[:surroundings].include? params["to"] }[:id]
 
     graph = Map.new
     render json: graph.route(from, to)

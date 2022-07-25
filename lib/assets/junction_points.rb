@@ -1,31 +1,505 @@
 def junctions
     [
         {
-            "id": 1,
-            "top": 455,
-            "left": 1750,
-            "surroundings": ["main-gate"]
+            "id":1 ,
+            "top":459 ,
+            "left":1747,
+            "surroundings": %w[main-gate]
         },
         {
-            "id": 2,
-            "top": 605,
-            "left": 1760,
-            "surroundings": ["guest-house"]
+            "id":2,
+            "top":602,
+            "left":1757,
+            "surroundings": %w[guest-house]
         },
         {
-            "id": 3,
-            "top": 900,
-            "left": 1770,
-            "surroundings": ["atm-1"]
+            "id":3,
+            "top":833,
+            "left":1763,
+            "surroundings": []
+        },
+        {
+            "id":4,
+            "top":839,
+            "left":1763,
+            "surroundings": []
+        },
+        {
+            "id":5,
+            "top":919,
+            "left":1777,
+            "surroundings": %w[atm-1]
+        },
+        {
+            "id":6,
+            "top":956,
+            "left":1828,
+            "surroundings": %w[main-parking]
+        },
+        {
+            "id":7,
+            "top":1174,
+            "left":1785,
+            "surroundings": []
+        },
+        {
+            "id":8,
+            "top":1173,
+            "left":1849,
+            "surroundings": []
+        },
+        {
+            "id":9,
+            "top":1157,
+            "left":2111,
+            "surroundings": %w[lake]
+        },
+        {
+            "id":10,
+            "top":1231,
+            "left":1782,
+            "surroundings": []
+        },
+        {
+            "id":11,
+            "top":1238,
+            "left":1521,
+            "surroundings": %w[bus]
+        },
+        {
+            "id":12,
+            "top":1270,
+            "left":859,
+            "surroundings": []
+        },
+        {
+            "id":13,
+            "top":1288,
+            "left":339,
+            "surroundings": []
+        },
+        {
+            "id":14,
+            "top":1462,
+            "left":1535,
+            "surroundings": %w[smart-agri-fields]
+        },
+        {
+            "id":15,
+            "top":1401,
+            "left":1789,
+            "surroundings": []
+        },
+        {
+            "id":16,
+            "top":1413,
+            "left":1895,
+            "surroundings": %w[principal-office reserach-park]
+        },
+        {
+            "id":17,
+            "top":1451,
+            "left":1800,
+            "surroundings":%w[]
+        },
+        {
+            "id":18,
+            "top":1448,
+            "left":1898,
+            "surroundings":%w[]
+        },
+        {
+            "id":19,
+            "top":1635,
+            "left":1797,
+            "surroundings":%w[]
+        },
+        {
+            "id":20,
+            "top":1645,
+            "left":1976,
+            "surroundings":%w[]
+        },
+        {
+            "id":21,
+            "top":1726,
+            "left":1813,
+            "surroundings":%w[]
+        },
+        {
+            "id":22,
+            "top":1726,
+            "left":1977,
+            "surroundings":%w[]
+        },
+        {
+            "id":23,
+            "top":1795,
+            "left":1808,
+            "surroundings":%w[]
+        },
+        {
+            "id":24,
+            "top":1804,
+            "left":1987,
+            "surroundings":%w[]
+        },
+        {
+            "id":25,
+            "top":1905,
+            "left":1915,
+            "surroundings":%w[]
+        },
+        {
+            "id":26,
+            "top":1919,
+            "left":1999,
+            "surroundings":%w[sf-block sf-block-labs]
+        },
+        {
+            "id":27,
+            "top":1984,
+            "left":1830,
+            "surroundings":%w[]
+        },
+        {
+            "id":28,
+            "top":2025,
+            "left":1829,
+            "surroundings":%w[]
+        },
+        {
+            "id":29,
+            "top":2086,
+            "left":1832,
+            "surroundings":%w[]
+        },
+        {
+            "id":30,
+            "top":2045,
+            "left":2062,
+            "surroundings":%w[]
+        },
+        {
+            "id":31,
+            "top":1969,
+            "left":2145,
+            "surroundings":%w[]
+        },
+        {
+            "id":32,
+            "top":2132,
+            "left":1819,
+            "surroundings":%w[]
+        },
+        {
+            "id":33,
+            "top":2129,
+            "left":1904,
+            "surroundings":%w[]
+        },
+        {
+            "id":34,
+            "top":2166,
+            "left":1899,
+            "surroundings":%w[mechanic-front mechanic-back]
+        },
+        {
+            "id":35,
+            "top":2197,
+            "left":1905,
+            "surroundings":%w[]
+        },
+        {
+            "id":36,
+            "top":2197,
+            "left":1822,
+            "surroundings":%w[]
+        },
+        {
+            "id":37,
+            "top":2234,
+            "left":1835,
+            "surroundings":%w[]
+        },
+        {
+            "id":38,
+            "top":2277,
+            "left":1843,
+            "surroundings":%w[]
+        },
+        {
+            "id":39,
+            "top":2255,
+            "left":2099,
+            "surroundings":%w[]
+        },
+        {
+            "id":40,
+            "top":2215,
+            "left":2093,
+            "surroundings":%w[]
+        },
+        {
+            "id":41,
+            "top":2434,
+            "left":1832,
+            "surroundings":%w[]
+        },
+        {
+            "id":42,
+            "top":2462,
+            "left":1834,
+            "surroundings":%w[]
+        },
+        {
+            "id":43,
+            "top":2458,
+            "left":1912,
+            "surroundings":%w[]
+        },
+        {
+            "id":44,
+            "top":2514,
+            "left":1922,
+            "surroundings":%w[main-store]
+        },
+        {
+            "id":45,
+            "top":2567,
+            "left":1920,
+            "surroundings":%w[]
+        },
+        {
+            "id":46,
+            "top":2534,
+            "left":1837,
+            "surroundings":%w[]
+        },
+        {
+            "id":47,
+            "top":2570,
+            "left":1839,
+            "surroundings":%w[]
+        },
+        {
+            "id":48,
+            "top":2627,
+            "left":1836,
+            "surroundings":%w[main-store]
+        },
+        {
+            "id":49,
+            "top":2781,
+            "left":1848,
+            "surroundings":%w[]
+        },
+        {
+            "id":50,
+            "top":2767,
+            "left":1981,
+            "surroundings":%w[]
+        },
+        {
+            "id":51,
+            "top":2761,
+            "left":2022,
+            "surroundings":%w[]
+        },
+        {
+            "id":52,
+            "top":2701,
+            "left":2010,
+            "surroundings":%w[indoor-gym]
+        },
+        {
+            "id":53,
+            "top":2753,
+            "left":2070,
+            "surroundings":%w[]
+        },
+        {
+            "id":54,
+            "top":2695,
+            "left":2109,
+            "surroundings":%w[]
+        },
+        {
+            "id":55,
+            "top":2669,
+            "left":2066,
+            "surroundings":%w[outdoor-gym]
+        },
+        {
+            "id":56,
+            "top":2669,
+            "left":2131,
+            "surroundings":%w[]
+        },
+        {
+            "id":57,
+            "top":2539,
+            "left":2135,
+            "surroundings":%w[]
+        },
+        {
+            "id":58,
+            "top":2530,
+            "left":2061,
+            "surroundings":%w[]
+        },
+        {
+            "id":59,
+            "top":2534,
+            "left":2003,
+            "surroundings":%w[coral]
+        },
+        {
+            "id":60,
+            "top":2535,
+            "left":2196,
+            "surroundings":%w[]
+        },
+        {
+            "id":61,
+            "top":2762,
+            "left":2126,
+            "surroundings":%w[]
+        },
+        {
+            "id":62,
+            "top":2754,
+            "left":2231,
+            "surroundings":%w[boys-mess]
+        },
+        {
+            "id":63,
+            "top":2563,
+            "left":2240,
+            "surroundings":%w[emerald]
+        },
+        {
+            "id":64,
+            "top":2504,
+            "left":2307,
+            "surroundings":%w[]
+        },
+        {
+            "id":65,
+            "top":2489,
+            "left":2636,
+            "surroundings":%w[]
+        },
+        {
+            "id":66,
+            "top":2919,
+            "left":2259,
+            "surroundings":%w[]
+        },
+        {
+            "id":67,
+            "top":2952,
+            "left":2235,
+            "surroundings":%w[sapphire]
+        },
+        {
+            "id":68,
+            "top":2961,
+            "left":2102,
+            "surroundings":%w[]
+        },
+        {
+            "id":69,
+            "top":2964,
+            "left":2047,
+            "surroundings":%w[]
+        },
+        {
+            "id":70,
+            "top":2876,
+            "left":2108,
+            "surroundings":%w[boys-laundry]
+        },
+        {
+            "id":71,
+            "top":2968,
+            "left":2418,
+            "surroundings":%w[]
+        },
+        {
+            "id":72,
+            "top":2896,
+            "left":2567,
+            "surroundings":%w[]
+        },
+        {
+            "id":73,
+            "top":2882,
+            "left":2637,
+            "surroundings":%w[]
+        },
+        {
+            "id":74,
+            "top":3040,
+            "left":2521,
+            "surroundings":%w[]
+        },
+        {
+            "id":75,
+            "top":3030,
+            "left":2665,
+            "surroundings":%w[ruby]
+        },
+        {
+            "id":76,
+            "top":3040,
+            "left":2934,
+            "surroundings":%w[]
+        },
+        {
+            "id":77,
+            "top":3217,
+            "left":2933,
+            "surroundings":%w[]
+        },
+        {
+            "id":78,
+            "top":3240,
+            "left":2883,
+            "surroundings":%w[pearl]
+        },
+        {
+            "id":79,
+            "top":3265,
+            "left":2645,
+            "surroundings":%w[agri-playground]
+        },
+        {
+            "id":80,
+            "top":3278,
+            "left":2285,
+            "surroundings":%w[]
+        },
+        {
+            "id":81,
+            "top":3291,
+            "left":1872,
+            "surroundings":%w[empty-ground]
+        },
+        {
+            "id":82,
+            "top":3108,
+            "left":1852,
+            "surroundings":%w[tennis-court-1 tennis-court-2 basket-ball-court volley-ball-court]
         },
     ]
 end
 
 =begin
 {
-    "id": "",
-    "top": "",
-    "left": "",
-    "surroundings": []
+    "id": ,
+    "top": ,
+    "left": ,
+    "surroundings":%w[]
 },
 =end

@@ -7,14 +7,15 @@ module MapHelper
             process_path graph.path(src,des)
         end
 
-        def process_path path
-            result = {"source": path.starting_point, "destination": path.ending_point, "distance": path.distance, "path": []}
+        def process_path(path)
+            result = {"distance": path.distance, "path": []}
 
             path.path.each do |vertex|
                 vertex = vertex.to_s
                 vertex = "0" * (3 - vertex.length) + vertex
                 result[:path] << vertex
             end
+            result
         end
     end
 end
