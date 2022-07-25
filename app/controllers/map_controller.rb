@@ -1,5 +1,7 @@
 class MapController < ApplicationController
 
+  include MapHelper
+
   def index
     if params["level"]
       @level = params["level"]
@@ -55,6 +57,7 @@ class MapController < ApplicationController
       end
     end
 
+    arr.sort_by! { |i| formatted(i[:match]).index(query) }
 
     render json: arr
   end
@@ -79,6 +82,14 @@ class MapController < ApplicationController
     tags = place_tags[:tags]
     place = tags.detect{ |i| i[:id] == params[:id] }
     render json: {"name": place[:name], "main": place[:name], "floors": [ {"name": "Ground", "rooms": [ place[:name] ] } ] }
+  end
+
+  def direction
+    from = params["from"]
+    to = params["to"]
+
+    graph = Map.new
+    render json: graph.route(from, to)
   end
 
   private

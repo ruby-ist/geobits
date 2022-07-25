@@ -1,28 +1,22 @@
 def junctions
     [
         {
-            "id": "j001",
-            "top": "455",
-            "left": "1750",
+            "id": 1,
+            "top": 455,
+            "left": 1750,
             "surroundings": ["main-gate"]
         },
         {
-            "id": "j002",
-            "top": "605",
-            "left": "1760",
+            "id": 2,
+            "top": 605,
+            "left": 1760,
             "surroundings": ["guest-house"]
         },
         {
-            "id": "j003",
-            "top": "900",
-            "left": "1770",
+            "id": 3,
+            "top": 900,
+            "left": 1770,
             "surroundings": ["atm-1"]
-        },
-        {
-            "id": "",
-            "top": "",
-            "left": "",
-            "surroundings": []
         },
     ]
 end

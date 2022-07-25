@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get 'map/search', to: "map#search"
   get 'map/location/:id', to: "map#location"
   get 'map/details/:id', to: "map#details"
+  get 'map/direction', to: "map#direction"
 end

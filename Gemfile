@@ -71,3 +71,5 @@ group :production do
 end
 
 gem "rack-cors", "~> 1.1"
+
+gem "dijkstra_trace", "~> 0.0.2"
