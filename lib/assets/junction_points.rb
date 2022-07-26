@@ -213,7 +213,7 @@ def junctions
         {
             "id":36,
             "top":2197,
-            "left":1822,
+            "left":1839,
             "surroundings":%w[]
         },
         {
@@ -470,8 +470,8 @@ def junctions
         },
         {
             "id":79,
-            "top":3265,
-            "left":2645,
+            "top":3268,
+            "left":2517,
             "surroundings":%w[agri-playground]
         },
         {
@@ -484,7 +484,7 @@ def junctions
             "id":81,
             "top":3291,
             "left":1872,
-            "surroundings":%w[empty-ground]
+            "surroundings":%w[empty-ground"]
         },
         {
             "id":82,
@@ -492,14 +492,464 @@ def junctions
             "left":1852,
             "surroundings":%w[tennis-court-1 tennis-court-2 basket-ball-court volley-ball-court]
         },
+        {
+            "id":83,
+            "top":2792,
+            "left":1630,
+            "surroundings":%w[]
+        },
+        {
+            "id":84,
+            "top":2790,
+            "left":1593,
+            "surroundings":%w[]
+        },
+        {
+            "id":85,
+            "top":2792,
+            "left":1550,
+            "surroundings":%w[]
+        },
+        {
+            "id":86,
+            "top":2902,
+            "left":1551,
+            "surroundings":%w[dayscholar-mess-2 recreation-hall]
+        },
+        {
+            "id":87,
+            "top":2902,
+            "left":1632,
+            "surroundings":%w[dayscholar-mess-1 pet-room cafeteria]
+        },
+        {
+            "id":88,
+            "top":2643,
+            "left":1584,
+            "surroundings":%w[]
+        },
+        {
+            "id":89,
+            "top":2591,
+            "left":1584,
+            "surroundings":%w[fashion-centre spinning-lab]
+        },
+        {
+            "id":90,
+            "top":2552,
+            "left":1584,
+            "surroundings":%w[]
+        },
+        {
+            "id":91,
+            "top":2491,
+            "left":1582,
+            "surroundings":%w[as-rib-11 as-rib-12]
+        },
+        {
+            "id":92,
+            "top":2451,
+            "left":1579,
+            "surroundings":%w[]
+        },
+        {
+            "id":93,
+            "top":2410,
+            "left":1576,
+            "surroundings":%w[as-rib-9 as-rib-10]
+        },
+        {
+            "id":94,
+            "top":2328,
+            "left":1569,
+            "surroundings":%w[]
+        },
+        {
+            "id":95,
+            "top":2283,
+            "left":1574,
+            "surroundings":%w[as-rib-7 as-rib-8]
+        },
+        {
+            "id":96,
+            "top":2241,
+            "left":1568,
+            "surroundings":%w[]
+        },
+        {
+            "id":97,
+            "top":2206,
+            "left":1568,
+            "surroundings":%w[as-rib-5 as-rib-6]
+        },
+        {
+            "id":98,
+            "top":2101,
+            "left":1563,
+            "surroundings":%w[]
+        },
+        {
+            "id":99,
+            "top":2066,
+            "left":1563,
+            "surroundings":%w[as-rib-3 as-rib-4]
+        },
+        {
+            "id":100,
+            "top":2024,
+            "left":1561,
+            "surroundings":%w[]
+        },
+        {
+            "id":101,
+            "top":1975,
+            "left":1558,
+            "surroundings":%w[as-rib-1 as-rib-2]
+        },
+        {
+            "id":102,
+            "top":1838,
+            "left":1554,
+            "surroundings":%w[]
+        },
+        {
+            "id":103,
+            "top":1832,
+            "left":1588,
+            "surroundings":%w[]
+        },
+        {
+            "id":104,
+            "top":1794,
+            "left":1592,
+            "surroundings":%w[as-main-right]
+        },
+        {
+            "id":105,
+            "top":1765,
+            "left":1584,
+            "surroundings":%w[]
+        },
+        {
+            "id":106,
+            "top":1770,
+            "left":1553,
+            "surroundings":%w[]
+        },
+        {
+            "id":107,
+            "top":1772,
+            "left":1523,
+            "surroundings":%w[as-main-left]
+        },
+        {
+            "id":108,
+            "top":1835,
+            "left":1518,
+            "surroundings":%w[]
+        },
+        {
+            "id":109,
+            "top":1715,
+            "left":1540,
+            "surroundings":%w[]
+        },
+        {
+            "id":110,
+            "top":1651,
+            "left":1569,
+            "surroundings":%w[]
+        },
+        {
+            "id":111,
+            "top":1652,
+            "left":1527,
+            "surroundings":%w[]
+        },
+        {
+            "id":112,
+            "top":1656,
+            "left":1496,
+            "surroundings":%w[]
+        },
+        {
+            "id":113,
+            "top":1656,
+            "left":1350,
+            "surroundings":%w[]
+        },
+        {
+            "id":114,
+            "top":2106,
+            "left":1370,
+            "surroundings":%w[]
+        },
+        {
+            "id":115,
+            "top":2104,
+            "left":1451,
+            "surroundings":%w[chiller-plant]
+        },
+        {
+            "id":116,
+            "top":2323,
+            "left":1385,
+            "surroundings":%w[]
+        },
+        {
+            "id":117,
+            "top":2422,
+            "left":1388,
+            "surroundings":%w[main-auditorium]
+        },
+        {
+            "id":118,
+            "top":2789,
+            "left":1402,
+            "surroundings":%w[library]
+        },
+        {
+            "id":119,
+            "top":2795,
+            "left":1191,
+            "surroundings":%w[]
+        },
+        {
+            "id":120,
+            "top":2660,
+            "left":1194,
+            "surroundings":%w[]
+        },
+        {
+            "id":121,
+            "top":2613,
+            "left":1194,
+            "surroundings":%w[placement-and-training internet-centre]
+        },
+        {
+            "id":122,
+            "top":2570,
+            "left":1193,
+            "surroundings":%w[]
+        },
+        {
+            "id":123,
+            "top":2521,
+            "left":1192,
+            "surroundings":%w[ib-rib-12 ib-rib-11]
+        },
+        {
+            "id":124,
+            "top":2461,
+            "left":1193,
+            "surroundings":%w[]
+        },
+        {
+            "id":125,
+            "top":2425,
+            "left":1190,
+            "surroundings":%w[ib-rib-10 ib-rib-9]
+        },
+        {
+            "id":126,
+            "top":2341,
+            "left":1186,
+            "surroundings":%w[]
+        },
+        {
+            "id":127,
+            "top":2298,
+            "left":1181,
+            "surroundings":%w[ib-rib-8 ib-rib-7]
+        },
+        {
+            "id":128,
+            "top":2255,
+            "left":1181,
+            "surroundings":%w[]
+        },
+        {
+            "id":129,
+            "top":2211,
+            "left":1177,
+            "surroundings":%w[ib-rib-6 ib-rib-5]
+        },
+        {
+            "id":130,
+            "top":2129,
+            "left":1172,
+            "surroundings":%w[]
+        },
+        {
+            "id":131,
+            "top":2001,
+            "left":1163,
+            "surroundings":%w[ib-rib-4 ib-rib-3]
+        },
+        {
+            "id":132,
+            "top":2036,
+            "left":1168,
+            "surroundings":%w[]
+        },
+        {
+            "id":133,
+            "top":2008,
+            "left":1166,
+            "surroundings":%w[ib-rib-1 ib-rib-2]
+        },
+        {
+            "id":134,
+            "top":1943,
+            "left":1163,
+            "surroundings":%w[herbal-garden]
+        },
+        {
+            "id":135,
+            "top":1849,
+            "left":1159,
+            "surroundings":%w[]
+        },
+        {
+            "id":136,
+            "top":1842,
+            "left":1192,
+            "surroundings":%w[]
+        },
+        {
+            "id":137,
+            "top":1781,
+            "left":1191,
+            "surroundings":%w[ib-block-1]
+        },
+        {
+            "id":138,
+            "top":1779,
+            "left":1160,
+            "surroundings":%w[]
+        },
+        {
+            "id":139,
+            "top":1781,
+            "left":1130,
+            "surroundings":%w[ib-block-2]
+        },
+        {
+            "id":140,
+            "top":1842,
+            "left":1133,
+            "surroundings":%w[]
+        },
+        {
+            "id":141,
+            "top":1731,
+            "left":1153,
+            "surroundings":%w[]
+        },
+        {
+            "id":142,
+            "top":1669,
+            "left":1177,
+            "surroundings":%w[]
+        },
+        {
+            "id":143,
+            "top":1671,
+            "left":1115,
+            "surroundings":%w[]
+        },
+        {
+            "id":144,
+            "top":1679,
+            "left":887,
+            "surroundings":%w[football-ground]
+        },
+        {
+            "id":145,
+            "top":2060,
+            "left":914,
+            "surroundings":%w[]
+        },
+        {
+            "id":146,
+            "top":2272,
+            "left":921,
+            "surroundings":%w[cricket-ground]
+        },
+        {
+            "id":147,
+            "top":2484,
+            "left":925,
+            "surroundings":%w[]
+        },
+        {
+            "id":148,
+            "top":2582,
+            "left":932,
+            "surroundings":%w[]
+        },
+        {
+            "id":149,
+            "top":2700,
+            "left":937,
+            "surroundings":%w[]
+        },
+        {
+            "id":150,
+            "top":2699,
+            "left":1013,
+            "surroundings":%w[radio]
+        },
+        {
+            "id":151,
+            "top":2810,
+            "left":914,
+            "surroundings":%w[]
+        },
+        {
+            "id":152,
+            "top":2820,
+            "left":868,
+            "surroundings":%w[west-parking]
+        },
+        {
+            "id":153,
+            "top":2838,
+            "left":443,
+            "surroundings":%w[west-parking]
+        },
+        {
+            "id":154,
+            "top":2405,
+            "left":436,
+            "surroundings":%w[playground-2 playground-3]
+        },
+        {
+            "id":155,
+            "top":2071,
+            "left":425,
+            "surroundings":%w[]
+        },
+        {
+            "id":156,
+            "top":2038,
+            "left":656,
+            "surroundings":%w[]
+        },
+        {
+            "id":157,
+            "top":2850,
+            "left":140,
+            "surroundings":%w[west-gate]
+        }
     ]
 end
 
 =begin
 {
-    "id": ,
-    "top": ,
-    "left": ,
+    "id":,
+    "top":,
+    "left":,
     "surroundings":%w[]
 },
 =end
