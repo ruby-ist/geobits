@@ -50,6 +50,9 @@ export default class extends Controller {
 		let newlevel = 4;
 		for (let map of maps) {
 			let hammertime = new Hammer(map, {touchAction: "auto"});
+			// hammertime.get('pinch').set({ enable: true });
+			// hammertime.on('pinchstart pinchin', () => {that.zoomout()})
+			// hammertime.on('pinchstart pinchout', () => {that.zoomin()})
 			hammertime.on("doubletap", function () {
 				if (that.zoomlevel === 4) {
 					if((map.width / 3.375 > screen.width) && (map.height / 3.375 > screen.height)) {

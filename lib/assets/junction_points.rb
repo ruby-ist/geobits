@@ -70,13 +70,13 @@ def junctions
             "id":12,
             "top":1270,
             "left":859,
-            "surroundings": []
+            "surroundings": %w[staff-quarters]
         },
         {
             "id":13,
             "top":1288,
             "left":339,
-            "surroundings": []
+            "surroundings": %w[west-gate-staffs]
         },
         {
             "id":14,
@@ -118,7 +118,7 @@ def junctions
             "id":20,
             "top":1645,
             "left":1976,
-            "surroundings":%w[]
+            "surroundings":%w[principal-room dean-room]
         },
         {
             "id":21,
@@ -154,7 +154,7 @@ def junctions
             "id":26,
             "top":1919,
             "left":1999,
-            "surroundings":%w[sf-block sf-block-labs]
+            "surroundings":%w[sf-block]
         },
         {
             "id":27,
@@ -184,7 +184,7 @@ def junctions
             "id":31,
             "top":1969,
             "left":2145,
-            "surroundings":%w[]
+            "surroundings":%w[sf-block-labs]
         },
         {
             "id":32,
@@ -202,7 +202,7 @@ def junctions
             "id":34,
             "top":2166,
             "left":1899,
-            "surroundings":%w[mechanic-front mechanic-back]
+            "surroundings":%w[mechanic-front]
         },
         {
             "id":35,
@@ -238,7 +238,7 @@ def junctions
             "id":40,
             "top":2215,
             "left":2093,
-            "surroundings":%w[]
+            "surroundings":%w[mechanic-back]
         },
         {
             "id":41,
@@ -298,13 +298,13 @@ def junctions
             "id":50,
             "top":2767,
             "left":1981,
-            "surroundings":%w[]
+            "surroundings":%w[boys-visitor-hall]
         },
         {
             "id":51,
             "top":2761,
             "left":2022,
-            "surroundings":%w[]
+            "surroundings":%w[boys-hostels]
         },
         {
             "id":52,
@@ -388,19 +388,19 @@ def junctions
             "id":65,
             "top":2489,
             "left":2636,
-            "surroundings":%w[]
+            "surroundings":%w[diamond]
         },
         {
             "id":66,
             "top":2919,
             "left":2259,
-            "surroundings":%w[]
+            "surroundings":%w[sapphire]
         },
         {
             "id":67,
             "top":2952,
             "left":2235,
-            "surroundings":%w[sapphire]
+            "surroundings":%w[]
         },
         {
             "id":68,
@@ -412,7 +412,7 @@ def junctions
             "id":69,
             "top":2964,
             "left":2047,
-            "surroundings":%w[]
+            "surroundings":%w[boys-canteen]
         },
         {
             "id":70,
@@ -484,7 +484,7 @@ def junctions
             "id":81,
             "top":3291,
             "left":1872,
-            "surroundings":%w[empty-ground"]
+            "surroundings":%w[playground-1]
         },
         {
             "id":82,
@@ -514,13 +514,13 @@ def junctions
             "id":86,
             "top":2902,
             "left":1551,
-            "surroundings":%w[dayscholar-mess-2 recreation-hall]
+            "surroundings":%w[dayscholar-mess-1 recreation-hall]
         },
         {
             "id":87,
             "top":2902,
             "left":1632,
-            "surroundings":%w[dayscholar-mess-1 pet-room cafeteria]
+            "surroundings":%w[dayscholar-mess-2 pet-room cafeteria]
         },
         {
             "id":88,
@@ -640,13 +640,13 @@ def junctions
             "id":107,
             "top":1772,
             "left":1523,
-            "surroundings":%w[as-main-left]
+            "surroundings":%w[]
         },
         {
             "id":108,
             "top":1835,
             "left":1518,
-            "surroundings":%w[]
+            "surroundings":%w[as-main-left]
         },
         {
             "id":109,
@@ -814,13 +814,13 @@ def junctions
             "id":136,
             "top":1842,
             "left":1192,
-            "surroundings":%w[]
+            "surroundings":%w[ib-block-1]
         },
         {
             "id":137,
             "top":1781,
             "left":1191,
-            "surroundings":%w[ib-block-1]
+            "surroundings":%w[]
         },
         {
             "id":138,
@@ -832,13 +832,13 @@ def junctions
             "id":139,
             "top":1781,
             "left":1130,
-            "surroundings":%w[ib-block-2]
+            "surroundings":%w[]
         },
         {
             "id":140,
             "top":1842,
             "left":1133,
-            "surroundings":%w[]
+            "surroundings":%w[ib-block-2]
         },
         {
             "id":141,
@@ -862,7 +862,7 @@ def junctions
             "id":144,
             "top":1679,
             "left":887,
-            "surroundings":%w[football-ground]
+            "surroundings":%w[]
         },
         {
             "id":145,
@@ -904,19 +904,19 @@ def junctions
             "id":151,
             "top":2810,
             "left":914,
-            "surroundings":%w[]
+            "surroundings":%w[girls-hostels narmadha ganga girls-basketball-court yamuna kaveri girls-mess north-bhavani middle-bhavani south-bhavani]
         },
         {
             "id":152,
             "top":2820,
             "left":868,
-            "surroundings":%w[west-parking]
+            "surroundings":%w[west-parking girls-visitor-hut]
         },
         {
             "id":153,
             "top":2838,
             "left":443,
-            "surroundings":%w[west-parking]
+            "surroundings":%w[medical-centre]
         },
         {
             "id":154,
@@ -934,14 +934,26 @@ def junctions
             "id":156,
             "top":2038,
             "left":656,
-            "surroundings":%w[]
+            "surroundings":%w[football-ground]
         },
         {
             "id":157,
             "top":2850,
             "left":140,
             "surroundings":%w[west-gate]
-        }
+        },
+        {
+            "id":158,
+            "top": 1651,
+            "left": 1761,
+            "surroundings":%w[]
+        },
+        {
+            "id":159,
+            "top": 1794,
+            "left": 1765,
+            "surroundings":%w[]
+        },
     ]
 end
 

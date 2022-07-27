@@ -130,8 +130,8 @@ def place_tags
       {
         "id": "main-store",
         "name": "Maintenance & Stationary Store",
-        "top": "2670px",
-        "left": "1665px"
+        "top": "2511px",
+        "left": "1896px"
       },
       {
         "id": "library",
@@ -292,24 +292,24 @@ def place_tags
       {
         "id": "coral",
         "name": "Coral Hostel (NRI Hostel)",
-        "top": "2510px",
-        "left": "1960px"
+        "top": "2550px",
+        "left": "1980px"
       },
       {
         "id": "outdoor-gym",
         "name": "Outdoor Gym",
         "top": "2610px",
-        "left": "2040px"
+        "left": "2060px"
       },
       {
         "id": "indoor-gym",
         "name": "Gym",
-        "top": "2715px",
-        "left": "1970px"
+        "top": "2685px",
+        "left": "1940px"
       },
       {
         "id": "boys-laundry",
-        "name": "Laundry",
+        "name": "Laundry (Boys)",
         "top": "2897px",
         "left": "2075px"
       },
@@ -440,12 +440,6 @@ def place_tags
         "left": "470px"
       },
       {
-        "id": "empty-ground",
-        "name": "Empty Ground",
-        "top": "3080px",
-        "left": "240px"
-      },
-      {
         "id": "west-gate",
         "name": "West Gate",
         "top": "2850px",
@@ -546,6 +540,54 @@ def place_tags
           "name": "ATM",
           "top": "905px",
           "left": "1790px"
+      },
+      {
+          "id": "west-gate-staffs",
+          "name": "West Gate (Staffs)",
+          "top": "1303px",
+          "left": "334px"
+      },
+      {
+          "id": "principal-room",
+          "name": "Principal Cabin",
+          "top": "1549px",
+          "left": "1926px"
+      },
+      {
+          "id": "dean-room",
+          "name": "Dean Cabin",
+          "top": "1557px",
+          "left": "1993px"
+      },
+      {
+          "id": "boys-visitor-hall",
+          "name": "Visitor Hall (Boys)",
+          "top": "2711px",
+          "left": "1965px"
+      },
+      {
+          "id": "boys-hostels",
+          "name": "Boys Hostels",
+          "top": "2777px",
+          "left": "1997px"
+      },
+      {
+          "id": "boys-canteen",
+          "name": "Canteens (boys)",
+          "top": "2951px",
+          "left": "2062px"
+      },
+      {
+          "id": "girls-hostels",
+          "name": "Girls Hostels",
+          "top": "2812px",
+          "left": "933px"
+      },
+      {
+          "id": "girls-visitor-hut",
+          "name": "Visitors Hut (Girls)",
+          "top": "2903px",
+          "left": "773px"
       },
     ]
   }

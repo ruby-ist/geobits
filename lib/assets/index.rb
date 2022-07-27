@@ -6,7 +6,7 @@ def guides
         "name": "SF Block",
         "main": "Sunflower Block",
         "about": "",
-        "terms": ["dept of it",  "dept of cse",  "dept of aiml", "SF Block", "school of computing"],
+        "terms": ["dept of it",  "dept of cse",  "dept of aiml", "SF Block", "school of computing", "sunflower block"],
         "floors": [
           {
             "name": "Base Floor",
@@ -40,7 +40,7 @@ def guides
           },
           {
             "name": "Ground Floor",
-            "rooms": ["Data Mining Lab", "Cloud Computing Lab", "DBMS Lab", "Faculty Hall 5", "Faculty Hall 7", "Programming Lab"]
+            "rooms": ["Data Mining Lab", "Cloud Computing Lab", "DBMS Lab", "Faculty Hall 5", "Faculty Hall 7", "Programming Lab", "sunflower block"]
           },
           {
             "name": "First Floor",
@@ -806,7 +806,7 @@ def guides
         "floors": [
           {
             "name": "Ground Floor",
-            "rooms": ["Hostel Manager Cabin", "Visitor Hall"]
+            "rooms": ["Hostel Manager Cabin"]
           },
           {
             "name": "First Floor",
@@ -819,7 +819,19 @@ def guides
         ]
       },
 
-
+      {
+          "id": "boys-visitor-hall",
+          "name": "Visitor hall (Boys)",
+          "main": "Boys Hostel Gate",
+          "about": "",
+          "terms": [""],
+          "floors": [
+              {
+                  "name": "Ground Floor",
+                  "rooms": ["Boys Visitor Hall"]
+              },
+          ]
+      },
     ]
   }
 end
