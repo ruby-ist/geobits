@@ -32,7 +32,7 @@ def place_tags
         "left": "400px"
       },
       {
-        "id": "auditorium",
+        "id": "main-auditorium",
         "name": "Main Auditorium",
         "top": "730px",
         "left": "390px"
@@ -44,19 +44,19 @@ def place_tags
         "left": "450px"
       },
       {
-        "id": "principal",
+        "id": "principal-office",
         "name": "Principal Office",
         "top": "420px",
         "left": "570px"
       },
       {
-        "id": "nri-hostel",
+        "id": "coral",
         "name": "NRI Hostel",
         "top": "730px",
         "left": "560px"
       },
       {
-        "id": "boys-hostel",
+        "id": "boys-hostels",
         "name": "Boys Hostels",
         "top": "930px",
         "left": "740px"
@@ -68,7 +68,7 @@ def place_tags
         "left": "700px"
       },
       {
-        "id": "girls-hostel",
+        "id": "girls-hostels",
         "name": "Girls Hostels",
         "top": "950px",
         "left": "200px"
@@ -80,13 +80,13 @@ def place_tags
         "left": "270px"
       },
       {
-        "id": "football-grnd",
+        "id": "football-ground",
         "name": "Football Ground",
         "top": "500px",
         "left": "160px"
       },
       {
-        "id": "cricket-grnd",
+        "id": "cricket-ground",
         "name": "Cricket Ground",
         "top": "670px",
         "left": "175px"
@@ -98,7 +98,7 @@ def place_tags
         "left": "190px"
       },
       {
-        "id": "agri-fields",
+        "id": "smart-agri-fields",
         "name": "Smart Agri Fields",
         "top": "400px",
         "left": "470px"
@@ -110,13 +110,13 @@ def place_tags
         "left": "440px"
       },
       {
-        "id": "medical",
+        "id": "medical-centre",
         "name": "Medical Centre",
         "top": "850px",
         "left": "120px"
       },
       {
-        "id": "parking",
+        "id": "main-parking",
         "name": "Main Parking Area",
         "top": "280px",
         "left": "570px"

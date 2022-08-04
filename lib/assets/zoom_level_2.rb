@@ -32,7 +32,7 @@ def place_tags
         "left": "600px"
       },
       {
-        "id": "auditorium",
+        "id": "main-auditorium",
         "name": "Main Auditorium",
         "top": "1120px",
         "left": "590px"
@@ -44,19 +44,19 @@ def place_tags
         "left": "700px"
       },
       {
-        "id": "principal",
+        "id": "principal-office",
         "name": "Principal Office",
         "top": "620px",
         "left": "870px"
       },
       {
-        "id": "nri-hostel",
+        "id": "coral",
         "name": "NRI Hostel",
         "top": "1110px",
         "left": "860px"
       },
       {
-        "id": "boys-hostel",
+        "id": "boys-hostels",
         "name": "Boys Hostels",
         "top": "1400px",
         "left": "990px"
@@ -68,7 +68,7 @@ def place_tags
         "left": "1080px"
       },
       {
-        "id": "girls-hostel",
+        "id": "girls-hostels",
         "name": "Girls Hostels",
         "top": "1450px",
         "left": "300px"
@@ -80,13 +80,13 @@ def place_tags
         "left": "420px"
       },
       {
-        "id": "football-grnd",
+        "id": "football-ground",
         "name": "Football Ground",
         "top": "705px",
         "left": "250px"
       },
       {
-        "id": "cricket-grnd",
+        "id": "cricket-ground",
         "name": "Cricket Ground",
         "top": "1000px",
         "left": "260px"
@@ -98,7 +98,7 @@ def place_tags
         "left": "300px"
       },
       {
-        "id": "agri-fields",
+        "id": "smart-agri-fields",
         "name": "Smart Agri Fields",
         "top": "630px",
         "left": "730px"
@@ -110,19 +110,19 @@ def place_tags
         "left": "690px"
       },
       {
-        "id": "medical",
+        "id": "medical-centre",
         "name": "Medical Centre",
         "top": "1300px",
         "left": "190px"
       },
       {
-        "id": "parking",
+        "id": "main-parking",
         "name": "Main Parking Area",
         "top": "380px",
         "left": "870px"
       },
       {
-        "id": "playground",
+        "id": "playground-1",
         "name": "Empty Playground",
         "top": "1517px",
         "left": "690px"
