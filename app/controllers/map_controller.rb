@@ -81,7 +81,7 @@ class MapController < ApplicationController
     end
     tags = place_tags[:tags]
     place = tags.detect{ |i| i[:id] == params[:id] }
-    render json: {"name": place[:name], "main": place[:name], "floors": [ {"name": "Ground", "rooms": [ place[:name] ] } ] }
+    render json: {"id": params[:id], "name": place[:name], "main": place[:name], "floors": [ {"name": "Ground", "rooms": [ place[:name] ] } ] }
   end
 
   def direction
