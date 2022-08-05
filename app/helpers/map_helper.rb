@@ -8,7 +8,21 @@ module MapHelper
         end
 
         def process_path(path)
-            result = {"distance": path.distance, "path": []}
+            load "#{Rails.root}/lib/assets/junction_points.rb"
+            points = junctions
+            first = points.find{|i| i[:id] == path.path.first}
+            last = points.find{|i| i[:id] == path.path.last}
+
+            result = {"distance": path.distance,
+                      "path": [],
+                      "starting-point": {
+                          "x": first[:left],
+                          "y": first[:top]
+                      },
+                      "ending-point": {
+                          "x": last[:left],
+                          "y": last[:top]
+                      }}
 
             path.path.each do |vertex|
                 vertex = vertex.to_s
