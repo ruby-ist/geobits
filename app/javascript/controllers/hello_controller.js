@@ -51,8 +51,21 @@ export default class extends Controller {
 		for (let map of maps) {
 			let hammertime = new Hammer(map, {touchAction: "auto"});
 			// hammertime.get('pinch').set({ enable: true });
-			// hammertime.on('pinchstart pinchin', () => {that.zoomout()})
-			// hammertime.on('pinchstart pinchout', () => {that.zoomin()})
+			//
+			// let pinchstarted = false;
+			// hammertime.on('pinchin pinchmove pinchend', (ev) => {
+			// 	if (ev.type === 'pinchmove' && !pinchstarted) {
+			// 		pinchstarted = true;
+			// 		if(ev.additionalEvent === "pinchin")
+			// 			console.log(ev);
+			// 		if(ev.additionalEvent === "pinchout")
+			// 			console.log(ev.scale);
+			// 		setTimeout(()=>{
+			// 			pinchstarted = false;
+			// 		}, 2500);
+			// 	}
+			// });
+			
 			hammertime.on("doubletap", function () {
 				if (that.zoomlevel === 4) {
 					if((map.width / 3.375 > screen.width) && (map.height / 3.375 > screen.height)) {

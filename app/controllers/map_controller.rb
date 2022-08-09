@@ -90,13 +90,15 @@ class MapController < ApplicationController
     graph = Map.new
 
     if params["from"] == 'my-location'
-      from = graph.nearest_junction(params["left"].to_i, params["top"].to_i)
+      from = graph.nearest_junction(params["my-left"].to_i, params["my-top"].to_i)
     else
       from = points.find{ |point| point[:surroundings].include? params["from"] }[:id]
     end
 
     if params["to"] == 'my-location'
-      to =  graph.nearest_junction(params["left"].to_i, params["top"].to_i)
+      to =  graph.nearest_junction(params["my-left"].to_i, params["my-top"].to_i)
+    elsif params["to"] == 'pinned-location'
+      to =  graph.nearest_junction(params["pin-left"].to_i, params["pin-top"].to_i)
     else
       to = points.find{ |point| point[:surroundings].include? params["to"] }[:id]
     end
