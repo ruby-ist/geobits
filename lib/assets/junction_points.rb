@@ -1,957 +1,957 @@
 def junctions
     [
         {
-            "id":1 ,
-            "top":459 ,
-            "left":1747,
+            "id":1,
+            "top":481,
+            "left":1755,
             "surroundings": %w[main-gate]
         },
         {
             "id":2,
-            "top":602,
-            "left":1757,
+            "top":626,
+            "left":1767,
             "surroundings": %w[guest-house]
         },
         {
             "id":3,
-            "top":833,
-            "left":1763,
+            "top":861,
+            "left":1784,
             "surroundings": []
         },
         {
             "id":4,
-            "top":839,
-            "left":1763,
+            "top":857,
+            "left":1859,
             "surroundings": []
         },
         {
             "id":5,
-            "top":919,
-            "left":1777,
+            "top":931,
+            "left":1788,
             "surroundings": %w[atm-1]
         },
         {
             "id":6,
-            "top":956,
-            "left":1828,
+            "top":965,
+            "left":1861,
             "surroundings": %w[main-parking]
         },
         {
             "id":7,
-            "top":1174,
-            "left":1785,
+            "top":1196,
+            "left":1805,
             "surroundings": []
         },
         {
             "id":8,
-            "top":1173,
-            "left":1849,
+            "top":1195,
+            "left":1867,
             "surroundings": []
         },
         {
             "id":9,
-            "top":1157,
-            "left":2111,
+            "top":1189,
+            "left":2097,
             "surroundings": %w[lake]
         },
         {
             "id":10,
-            "top":1231,
-            "left":1782,
+            "top":1254,
+            "left":1805,
             "surroundings": []
         },
         {
             "id":11,
-            "top":1238,
-            "left":1521,
+            "top":1265,
+            "left":1539,
             "surroundings": %w[bus]
         },
         {
             "id":12,
-            "top":1270,
-            "left":859,
+            "top":1293,
+            "left":879,
             "surroundings": %w[staff-quarters]
         },
         {
             "id":13,
-            "top":1288,
-            "left":339,
+            "top":1322,
+            "left":356,
             "surroundings": %w[west-gate-staffs]
         },
         {
             "id":14,
-            "top":1462,
-            "left":1535,
+            "top":1485,
+            "left":1550,
             "surroundings": %w[smart-agri-fields]
         },
         {
             "id":15,
-            "top":1401,
-            "left":1789,
+            "top":1417,
+            "left":1817,
             "surroundings": []
         },
         {
             "id":16,
-            "top":1413,
-            "left":1895,
+            "top":1422,
+            "left":1912,
             "surroundings": %w[principal-office reserach-park]
         },
         {
             "id":17,
-            "top":1451,
-            "left":1800,
+            "top":1478,
+            "left":1820,
             "surroundings":%w[]
         },
         {
             "id":18,
-            "top":1448,
-            "left":1898,
+            "top":1474,
+            "left":1906,
             "surroundings":%w[]
         },
         {
             "id":19,
-            "top":1635,
-            "left":1797,
+            "top":1654,
+            "left":1815,
             "surroundings":%w[]
         },
         {
             "id":20,
-            "top":1645,
-            "left":1976,
+            "top":1668,
+            "left":1993,
             "surroundings":%w[principal-room dean-room]
         },
         {
             "id":21,
-            "top":1726,
-            "left":1813,
-            "surroundings":%w[]
-        },
-        {
-            "id":22,
-            "top":1726,
-            "left":1977,
-            "surroundings":%w[]
-        },
-        {
-            "id":23,
-            "top":1795,
-            "left":1808,
-            "surroundings":%w[]
-        },
-        {
-            "id":24,
-            "top":1804,
-            "left":1987,
-            "surroundings":%w[]
-        },
-        {
-            "id":25,
-            "top":1905,
-            "left":1915,
-            "surroundings":%w[]
-        },
-        {
-            "id":26,
-            "top":1919,
-            "left":1999,
-            "surroundings":%w[sf-block]
-        },
-        {
-            "id":27,
-            "top":1984,
+            "top":1752,
             "left":1830,
             "surroundings":%w[]
         },
         {
-            "id":28,
-            "top":2025,
-            "left":1829,
+            "id":22,
+            "top":1749,
+            "left":1995,
             "surroundings":%w[]
         },
         {
-            "id":29,
-            "top":2086,
-            "left":1832,
-            "surroundings":%w[]
-        },
-        {
-            "id":30,
-            "top":2045,
-            "left":2062,
-            "surroundings":%w[]
-        },
-        {
-            "id":31,
-            "top":1969,
-            "left":2145,
-            "surroundings":%w[sf-block-labs]
-        },
-        {
-            "id":32,
-            "top":2132,
-            "left":1819,
-            "surroundings":%w[]
-        },
-        {
-            "id":33,
-            "top":2129,
-            "left":1904,
-            "surroundings":%w[]
-        },
-        {
-            "id":34,
-            "top":2166,
-            "left":1899,
-            "surroundings":%w[mechanic-front]
-        },
-        {
-            "id":35,
-            "top":2197,
-            "left":1905,
-            "surroundings":%w[]
-        },
-        {
-            "id":36,
-            "top":2197,
-            "left":1839,
-            "surroundings":%w[]
-        },
-        {
-            "id":37,
-            "top":2234,
-            "left":1835,
-            "surroundings":%w[]
-        },
-        {
-            "id":38,
-            "top":2277,
-            "left":1843,
-            "surroundings":%w[]
-        },
-        {
-            "id":39,
-            "top":2255,
-            "left":2099,
-            "surroundings":%w[]
-        },
-        {
-            "id":40,
-            "top":2215,
-            "left":2093,
-            "surroundings":%w[mechanic-back]
-        },
-        {
-            "id":41,
-            "top":2434,
-            "left":1832,
-            "surroundings":%w[]
-        },
-        {
-            "id":42,
-            "top":2462,
-            "left":1834,
-            "surroundings":%w[]
-        },
-        {
-            "id":43,
-            "top":2458,
-            "left":1912,
-            "surroundings":%w[]
-        },
-        {
-            "id":44,
-            "top":2514,
-            "left":1922,
-            "surroundings":%w[main-store]
-        },
-        {
-            "id":45,
-            "top":2567,
-            "left":1920,
-            "surroundings":%w[]
-        },
-        {
-            "id":46,
-            "top":2534,
+            "id":23,
+            "top":1821,
             "left":1837,
             "surroundings":%w[]
         },
         {
+            "id":24,
+            "top":1822,
+            "left":2002,
+            "surroundings":%w[]
+        },
+        {
+            "id":25,
+            "top":1929,
+            "left":1924,
+            "surroundings":%w[]
+        },
+        {
+            "id":26,
+            "top":1932,
+            "left":2012,
+            "surroundings":%w[sf-block]
+        },
+        {
+            "id":27,
+            "top":2001,
+            "left":1842,
+            "surroundings":%w[]
+        },
+        {
+            "id":28,
+            "top":2038,
+            "left":1841,
+            "surroundings":%w[]
+        },
+        {
+            "id":29,
+            "top":2084,
+            "left":1846,
+            "surroundings":%w[]
+        },
+        {
+            "id":30,
+            "top":2072,
+            "left":2082,
+            "surroundings":%w[]
+        },
+        {
+            "id":31,
+            "top":1960,
+            "left":2190,
+            "surroundings":%w[sf-block-labs]
+        },
+        {
+            "id":32,
+            "top":2153,
+            "left":1849,
+            "surroundings":%w[]
+        },
+        {
+            "id":33,
+            "top":2144,
+            "left":1923,
+            "surroundings":%w[]
+        },
+        {
+            "id":34,
+            "top":2179,
+            "left":1923,
+            "surroundings":%w[mechanic-front]
+        },
+        {
+            "id":35,
+            "top":2209,
+            "left":1925,
+            "surroundings":%w[]
+        },
+        {
+            "id":36,
+            "top":2213,
+            "left":1855,
+            "surroundings":%w[]
+        },
+        {
+            "id":37,
+            "top":2255,
+            "left":1854,
+            "surroundings":%w[]
+        },
+        {
+            "id":38,
+            "top":2292,
+            "left":1850,
+            "surroundings":%w[]
+        },
+        {
+            "id":39,
+            "top":2276,
+            "left":2119,
+            "surroundings":%w[]
+        },
+        {
+            "id":40,
+            "top":2221,
+            "left":2118,
+            "surroundings":%w[mechanic-back]
+        },
+        {
+            "id":41,
+            "top":2456,
+            "left":1859,
+            "surroundings":%w[]
+        },
+        {
+            "id":42,
+            "top":2476,
+            "left":1862,
+            "surroundings":%w[]
+        },
+        {
+            "id":43,
+            "top":2473,
+            "left":1933,
+            "surroundings":%w[]
+        },
+        {
+            "id":44,
+            "top":2529,
+            "left":1933,
+            "surroundings":%w[main-store]
+        },
+        {
+            "id":45,
+            "top":2591,
+            "left":1935,
+            "surroundings":%w[]
+        },
+        {
+            "id":46,
+            "top":2548,
+            "left":1863,
+            "surroundings":%w[]
+        },
+        {
             "id":47,
-            "top":2570,
-            "left":1839,
+            "top":2588,
+            "left":1867,
             "surroundings":%w[]
         },
         {
             "id":48,
-            "top":2627,
-            "left":1836,
-            "surroundings":%w[main-store]
+            "top":2648,
+            "left":1871,
+            "surroundings":%w[]
         },
         {
             "id":49,
-            "top":2781,
-            "left":1848,
+            "top":2797,
+            "left":1882,
             "surroundings":%w[]
         },
         {
             "id":50,
-            "top":2767,
-            "left":1981,
+            "top":2795,
+            "left":1990,
             "surroundings":%w[boys-visitor-hall]
         },
         {
             "id":51,
-            "top":2761,
-            "left":2022,
+            "top":2794,
+            "left":2042,
             "surroundings":%w[boys-hostels]
         },
         {
             "id":52,
-            "top":2701,
-            "left":2010,
+            "top":2727,
+            "left":2039,
             "surroundings":%w[indoor-gym]
         },
         {
             "id":53,
-            "top":2753,
-            "left":2070,
+            "top":2789,
+            "left":2095,
             "surroundings":%w[]
         },
         {
             "id":54,
-            "top":2695,
-            "left":2109,
+            "top":2748,
+            "left":2132,
             "surroundings":%w[]
         },
         {
             "id":55,
-            "top":2669,
-            "left":2066,
+            "top":2721,
+            "left":2072,
             "surroundings":%w[outdoor-gym]
         },
         {
             "id":56,
-            "top":2669,
-            "left":2131,
+            "top":2711,
+            "left":2171,
             "surroundings":%w[]
         },
         {
             "id":57,
-            "top":2539,
-            "left":2135,
+            "top":2573,
+            "left":2168,
             "surroundings":%w[]
         },
         {
             "id":58,
-            "top":2530,
-            "left":2061,
+            "top":2577,
+            "left":2068,
             "surroundings":%w[]
         },
         {
             "id":59,
-            "top":2534,
-            "left":2003,
+            "top":2578,
+            "left":2024,
             "surroundings":%w[coral]
         },
         {
             "id":60,
-            "top":2535,
-            "left":2196,
+            "top":2571,
+            "left":2236,
             "surroundings":%w[]
         },
         {
             "id":61,
-            "top":2762,
-            "left":2126,
+            "top":2786,
+            "left":2133,
             "surroundings":%w[]
         },
         {
             "id":62,
-            "top":2754,
-            "left":2231,
+            "top":2779,
+            "left":2271,
             "surroundings":%w[boys-mess]
         },
         {
             "id":63,
-            "top":2563,
-            "left":2240,
+            "top":2567,
+            "left":2265,
             "surroundings":%w[emerald]
         },
         {
             "id":64,
-            "top":2504,
-            "left":2307,
+            "top":2509,
+            "left":2298,
             "surroundings":%w[]
         },
         {
             "id":65,
-            "top":2489,
-            "left":2636,
+            "top":2488,
+            "left":2657,
             "surroundings":%w[diamond]
         },
         {
             "id":66,
-            "top":2919,
-            "left":2259,
+            "top":2955,
+            "left":2278,
             "surroundings":%w[sapphire]
         },
         {
             "id":67,
-            "top":2952,
-            "left":2235,
+            "top":2971,
+            "left":2250,
             "surroundings":%w[]
         },
         {
             "id":68,
-            "top":2961,
-            "left":2102,
+            "top":2966,
+            "left":2136,
             "surroundings":%w[]
         },
         {
             "id":69,
-            "top":2964,
-            "left":2047,
+            "top":2969,
+            "left":2085,
             "surroundings":%w[boys-canteen]
         },
         {
             "id":70,
-            "top":2876,
-            "left":2108,
+            "top":2873,
+            "left":2134,
             "surroundings":%w[boys-laundry]
         },
         {
             "id":71,
-            "top":2968,
-            "left":2418,
+            "top":2997,
+            "left":2414,
             "surroundings":%w[]
         },
         {
             "id":72,
-            "top":2896,
-            "left":2567,
+            "top":2910,
+            "left":2591,
             "surroundings":%w[]
         },
         {
             "id":73,
-            "top":2882,
-            "left":2637,
+            "top":2902,
+            "left":2659,
             "surroundings":%w[]
         },
         {
             "id":74,
-            "top":3040,
-            "left":2521,
+            "top":3063,
+            "left":2554,
             "surroundings":%w[]
         },
         {
             "id":75,
-            "top":3030,
-            "left":2665,
+            "top":3058,
+            "left":2691,
             "surroundings":%w[ruby]
         },
         {
             "id":76,
-            "top":3040,
-            "left":2934,
+            "top":3057,
+            "left":2978,
             "surroundings":%w[]
         },
         {
             "id":77,
-            "top":3217,
-            "left":2933,
+            "top":3222,
+            "left":2978,
             "surroundings":%w[]
         },
         {
             "id":78,
-            "top":3240,
-            "left":2883,
+            "top":3253,
+            "left":2914,
             "surroundings":%w[pearl]
         },
         {
             "id":79,
-            "top":3268,
-            "left":2517,
-            "surroundings":%w[agri-playground]
-        },
-        {
-            "id":80,
-            "top":3278,
-            "left":2285,
+            "top":3290,
+            "left":2550,
             "surroundings":%w[]
         },
         {
+            "id":80,
+            "top":3301,
+            "left":2312,
+            "surroundings":%w[agri-playground]
+        },
+        {
             "id":81,
-            "top":3291,
-            "left":1872,
+            "top":3313,
+            "left":1897,
             "surroundings":%w[playground-1]
         },
         {
             "id":82,
-            "top":3108,
-            "left":1852,
+            "top":3100,
+            "left":1890,
             "surroundings":%w[tennis-court-1 tennis-court-2 basket-ball-court volley-ball-court]
         },
         {
             "id":83,
-            "top":2792,
-            "left":1630,
+            "top":2799,
+            "left":1668,
             "surroundings":%w[]
         },
         {
             "id":84,
-            "top":2790,
-            "left":1593,
+            "top":2800,
+            "left":1615,
             "surroundings":%w[]
         },
         {
             "id":85,
-            "top":2792,
-            "left":1550,
-            "surroundings":%w[]
-        },
-        {
-            "id":86,
-            "top":2902,
-            "left":1551,
-            "surroundings":%w[dayscholar-mess-1 recreation-hall]
-        },
-        {
-            "id":87,
-            "top":2902,
-            "left":1632,
-            "surroundings":%w[dayscholar-mess-2 pet-room cafeteria]
-        },
-        {
-            "id":88,
-            "top":2643,
-            "left":1584,
-            "surroundings":%w[]
-        },
-        {
-            "id":89,
-            "top":2591,
-            "left":1584,
-            "surroundings":%w[fashion-centre spinning-lab]
-        },
-        {
-            "id":90,
-            "top":2552,
-            "left":1584,
-            "surroundings":%w[]
-        },
-        {
-            "id":91,
-            "top":2491,
-            "left":1582,
-            "surroundings":%w[as-rib-11 as-rib-12]
-        },
-        {
-            "id":92,
-            "top":2451,
+            "top":2807,
             "left":1579,
             "surroundings":%w[]
         },
         {
+            "id":86,
+            "top":2928,
+            "left":1579,
+            "surroundings":%w[dayscholar-mess-1 recreation-hall]
+        },
+        {
+            "id":87,
+            "top":2919,
+            "left":1669,
+            "surroundings":%w[dayscholar-mess-2 pet-room cafeteria]
+        },
+        {
+            "id":88,
+            "top":2662,
+            "left":1610,
+            "surroundings":%w[]
+        },
+        {
+            "id":89,
+            "top":2610,
+            "left":1606,
+            "surroundings":%w[fashion-centre spinning-lab]
+        },
+        {
+            "id":90,
+            "top":2558,
+            "left":1603,
+            "surroundings":%w[]
+        },
+        {
+            "id":91,
+            "top":2513,
+            "left":1603,
+            "surroundings":%w[as-rib-11 as-rib-12]
+        },
+        {
+            "id":92,
+            "top":2470,
+            "left":1600,
+            "surroundings":%w[]
+        },
+        {
             "id":93,
-            "top":2410,
-            "left":1576,
+            "top":2433,
+            "left":1600,
             "surroundings":%w[as-rib-9 as-rib-10]
         },
         {
             "id":94,
-            "top":2328,
-            "left":1569,
+            "top":2338,
+            "left":1595,
             "surroundings":%w[]
         },
         {
             "id":95,
-            "top":2283,
-            "left":1574,
+            "top":2300,
+            "left":1595,
             "surroundings":%w[as-rib-7 as-rib-8]
         },
         {
             "id":96,
-            "top":2241,
-            "left":1568,
+            "top":2264,
+            "left":1592,
             "surroundings":%w[]
         },
         {
             "id":97,
-            "top":2206,
-            "left":1568,
+            "top":2225,
+            "left":1590,
             "surroundings":%w[as-rib-5 as-rib-6]
         },
         {
             "id":98,
-            "top":2101,
-            "left":1563,
+            "top":2123,
+            "left":1585,
             "surroundings":%w[]
         },
         {
             "id":99,
-            "top":2066,
-            "left":1563,
+            "top":2086,
+            "left":1584,
             "surroundings":%w[as-rib-3 as-rib-4]
         },
         {
             "id":100,
-            "top":2024,
-            "left":1561,
+            "top":2050,
+            "left":1583,
             "surroundings":%w[]
         },
         {
             "id":101,
-            "top":1975,
-            "left":1558,
+            "top":2009,
+            "left":1581,
             "surroundings":%w[as-rib-1 as-rib-2]
         },
         {
             "id":102,
-            "top":1838,
-            "left":1554,
+            "top":1853,
+            "left":1577,
             "surroundings":%w[]
         },
         {
             "id":103,
-            "top":1832,
-            "left":1588,
+            "top":1851,
+            "left":1610,
             "surroundings":%w[]
         },
         {
             "id":104,
-            "top":1794,
-            "left":1592,
+            "top":1809,
+            "left":1611,
             "surroundings":%w[as-main-right]
         },
         {
             "id":105,
-            "top":1765,
-            "left":1584,
+            "top":1787,
+            "left":1608,
             "surroundings":%w[]
         },
         {
             "id":106,
-            "top":1770,
-            "left":1553,
+            "top":1787,
+            "left":1571,
             "surroundings":%w[]
         },
         {
             "id":107,
-            "top":1772,
-            "left":1523,
+            "top":1788,
+            "left":1542,
             "surroundings":%w[]
         },
         {
             "id":108,
-            "top":1835,
-            "left":1518,
+            "top":1851,
+            "left":1539,
             "surroundings":%w[as-main-left]
         },
         {
             "id":109,
-            "top":1715,
-            "left":1540,
+            "top":1743,
+            "left":1568,
             "surroundings":%w[]
         },
         {
             "id":110,
-            "top":1651,
-            "left":1569,
+            "top":1667,
+            "left":1609,
             "surroundings":%w[]
         },
         {
             "id":111,
-            "top":1652,
-            "left":1527,
+            "top":1669,
+            "left":1555,
             "surroundings":%w[]
         },
         {
             "id":112,
-            "top":1656,
-            "left":1496,
+            "top":1671,
+            "left":1503,
             "surroundings":%w[]
         },
         {
             "id":113,
-            "top":1656,
-            "left":1350,
+            "top":1672,
+            "left":1366,
             "surroundings":%w[]
         },
         {
             "id":114,
-            "top":2106,
-            "left":1370,
+            "top":2133,
+            "left":1376,
             "surroundings":%w[]
         },
         {
             "id":115,
-            "top":2104,
-            "left":1451,
+            "top":2132,
+            "left":1471,
             "surroundings":%w[chiller-plant]
         },
         {
             "id":116,
-            "top":2323,
-            "left":1385,
+            "top":2347,
+            "left":1393,
             "surroundings":%w[]
         },
         {
             "id":117,
-            "top":2422,
-            "left":1388,
+            "top":2443,
+            "left":1401,
             "surroundings":%w[main-auditorium]
         },
         {
             "id":118,
-            "top":2789,
-            "left":1402,
+            "top":2815,
+            "left":1420,
             "surroundings":%w[library]
         },
         {
             "id":119,
-            "top":2795,
-            "left":1191,
+            "top":2830,
+            "left":1217,
             "surroundings":%w[]
         },
         {
             "id":120,
-            "top":2660,
-            "left":1194,
+            "top":2681,
+            "left":1215,
             "surroundings":%w[]
         },
         {
             "id":121,
-            "top":2613,
-            "left":1194,
+            "top":2638,
+            "left":1218,
             "surroundings":%w[placement-and-training internet-centre]
         },
         {
             "id":122,
-            "top":2570,
-            "left":1193,
+            "top":2589,
+            "left":1217,
             "surroundings":%w[]
         },
         {
             "id":123,
-            "top":2521,
-            "left":1192,
+            "top":2523,
+            "left":1215,
             "surroundings":%w[ib-rib-12 ib-rib-11]
         },
         {
             "id":124,
-            "top":2461,
-            "left":1193,
+            "top":2488,
+            "left":1215,
             "surroundings":%w[]
         },
         {
             "id":125,
-            "top":2425,
-            "left":1190,
+            "top":2452,
+            "left":1212,
             "surroundings":%w[ib-rib-10 ib-rib-9]
         },
         {
             "id":126,
-            "top":2341,
-            "left":1186,
+            "top":2353,
+            "left":1207,
             "surroundings":%w[]
         },
         {
             "id":127,
-            "top":2298,
-            "left":1181,
+            "top":2312,
+            "left":1203,
             "surroundings":%w[ib-rib-8 ib-rib-7]
         },
         {
             "id":128,
-            "top":2255,
-            "left":1181,
+            "top":2279,
+            "left":1201,
             "surroundings":%w[]
         },
         {
             "id":129,
-            "top":2211,
-            "left":1177,
+            "top":2242,
+            "left":1199,
             "surroundings":%w[ib-rib-6 ib-rib-5]
         },
         {
             "id":130,
-            "top":2129,
-            "left":1172,
+            "top":2140,
+            "left":1192,
             "surroundings":%w[]
         },
         {
             "id":131,
-            "top":2001,
-            "left":1163,
+            "top":2104,
+            "left":1190,
             "surroundings":%w[ib-rib-4 ib-rib-3]
         },
         {
             "id":132,
-            "top":2036,
-            "left":1168,
+            "top":2069,
+            "left":1189,
             "surroundings":%w[]
         },
         {
             "id":133,
-            "top":2008,
-            "left":1166,
+            "top":2036,
+            "left":1188,
             "surroundings":%w[ib-rib-1 ib-rib-2]
         },
         {
             "id":134,
-            "top":1943,
-            "left":1163,
+            "top":1980,
+            "left":1184,
             "surroundings":%w[herbal-garden]
         },
         {
             "id":135,
-            "top":1849,
-            "left":1159,
+            "top":1865,
+            "left":1183,
             "surroundings":%w[]
         },
         {
             "id":136,
-            "top":1842,
-            "left":1192,
+            "top":1865,
+            "left":1217,
             "surroundings":%w[ib-block-1]
         },
         {
             "id":137,
-            "top":1781,
-            "left":1191,
+            "top":1799,
+            "left":1212,
             "surroundings":%w[]
         },
         {
             "id":138,
-            "top":1779,
-            "left":1160,
+            "top":1800,
+            "left":1178,
             "surroundings":%w[]
         },
         {
             "id":139,
-            "top":1781,
-            "left":1130,
+            "top":1800,
+            "left":1152,
             "surroundings":%w[]
         },
         {
             "id":140,
-            "top":1842,
-            "left":1133,
+            "top":1866,
+            "left":1150,
             "surroundings":%w[ib-block-2]
         },
         {
             "id":141,
-            "top":1731,
-            "left":1153,
-            "surroundings":%w[]
-        },
-        {
-            "id":142,
-            "top":1669,
+            "top":1764,
             "left":1177,
             "surroundings":%w[]
         },
         {
+            "id":142,
+            "top":1675,
+            "left":1219,
+            "surroundings":%w[]
+        },
+        {
             "id":143,
-            "top":1671,
-            "left":1115,
+            "top":1681,
+            "left":1120,
             "surroundings":%w[]
         },
         {
             "id":144,
-            "top":1679,
-            "left":887,
+            "top":1696,
+            "left":904,
             "surroundings":%w[]
         },
         {
             "id":145,
-            "top":2060,
-            "left":914,
+            "top":2082,
+            "left":921,
             "surroundings":%w[]
         },
         {
             "id":146,
-            "top":2272,
-            "left":921,
+            "top":2292,
+            "left":933,
             "surroundings":%w[cricket-ground]
         },
         {
             "id":147,
-            "top":2484,
-            "left":925,
+            "top":2501,
+            "left":946,
             "surroundings":%w[]
         },
         {
             "id":148,
-            "top":2582,
-            "left":932,
+            "top":2598,
+            "left":952,
             "surroundings":%w[]
         },
         {
             "id":149,
-            "top":2700,
-            "left":937,
+            "top":2756,
+            "left":961,
             "surroundings":%w[]
         },
         {
             "id":150,
-            "top":2699,
-            "left":1013,
+            "top":2751,
+            "left":1035,
             "surroundings":%w[radio]
         },
         {
             "id":151,
-            "top":2810,
-            "left":914,
+            "top":2845,
+            "left":965,
             "surroundings":%w[girls-hostels narmadha ganga girls-basketball-court yamuna kaveri girls-mess north-bhavani middle-bhavani south-bhavani]
         },
         {
             "id":152,
-            "top":2820,
-            "left":868,
+            "top":2850,
+            "left":858,
             "surroundings":%w[west-parking girls-visitor-hut]
         },
         {
             "id":153,
-            "top":2838,
-            "left":443,
+            "top":2867,
+            "left":464,
             "surroundings":%w[medical-centre]
         },
         {
             "id":154,
-            "top":2405,
-            "left":436,
+            "top":2458,
+            "left":461,
             "surroundings":%w[playground-2 playground-3]
         },
         {
             "id":155,
-            "top":2071,
-            "left":425,
+            "top":2092,
+            "left":443,
             "surroundings":%w[]
         },
         {
             "id":156,
-            "top":2038,
-            "left":656,
+            "top":2082,
+            "left":662,
             "surroundings":%w[football-ground]
         },
         {
             "id":157,
-            "top":2850,
-            "left":140,
+            "top":2870,
+            "left":173,
             "surroundings":%w[west-gate]
         },
         {
             "id":158,
-            "top": 1651,
-            "left": 1761,
+            "top": 1660,
+            "left": 1790,
             "surroundings":%w[]
         },
         {
             "id":159,
-            "top": 1794,
-            "left": 1765,
+            "top": 1808,
+            "left": 1794,
             "surroundings":%w[]
         },
     ]
