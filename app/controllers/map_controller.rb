@@ -91,6 +91,8 @@ class MapController < ApplicationController
 
     if params["from"] == 'my-location'
       from = graph.nearest_junction(params["my-left"].to_i, params["my-top"].to_i)
+    elsif params["from"] == 'pinned-location'
+      from =  graph.nearest_junction(params["pin-left"].to_i, params["pin-top"].to_i)
     else
       from = points.find{ |point| point[:surroundings].include? params["from"] }[:id]
     end
