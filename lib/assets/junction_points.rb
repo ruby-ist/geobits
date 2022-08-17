@@ -94,7 +94,7 @@ def junctions
             "id":16,
             "top":1422,
             "left":1912,
-            "surroundings": %w[principal-office reserach-park]
+            "surroundings": %w[principal-office research-park]
         },
         {
             "id":17,
@@ -298,7 +298,7 @@ def junctions
             "id":50,
             "top":2795,
             "left":1990,
-            "surroundings":%w[boys-visitor-hall]
+            "surroundings":%w[boys-visitor-hall power-house]
         },
         {
             "id":51,
@@ -952,6 +952,138 @@ def junctions
             "id":159,
             "top": 1808,
             "left": 1794,
+            "surroundings":%w[]
+        },
+        {
+            "id":160,
+            "top":3002,
+            "left":971,
+            "surroundings":%w[]
+        },
+        {
+            "id":161,
+            "top":3087,
+            "left":974,
+            "surroundings":%w[]
+        },
+        {
+            "id":162,
+            "top":3085,
+            "left":926,
+            "surroundings":%w[]
+        },
+        {
+            "id":163,
+            "top":3091,
+            "left":871,
+            "surroundings":%w[]
+        },
+        {
+            "id":164,
+            "top":3085,
+            "left":1009,
+            "surroundings":%w[]
+        },
+        {
+            "id":165,
+            "top":3082,
+            "left":1071,
+            "surroundings":%w[]
+        },
+        {
+            "id":166,
+            "top":3008,
+            "left":851,
+            "surroundings":%w[]
+        },
+        {
+            "id":167,
+            "top":3022,
+            "left":512,
+            "surroundings":%w[]
+        },
+        {
+            "id":168,
+            "top":3117,
+            "left":515,
+            "surroundings":%w[]
+        },
+        {
+            "id":169,
+            "top":2993,
+            "left":1316,
+            "surroundings":%w[]
+        },
+        {
+            "id":170,
+            "top":3272,
+            "left":928,
+            "surroundings":%w[]
+        },
+        {
+            "id":171,
+            "top":3270,
+            "left":974,
+            "surroundings":%w[]
+        },
+        {
+            "id":172,
+            "top":3269,
+            "left":1015,
+            "surroundings":%w[]
+        },
+        {
+            "id":173,
+            "top":3315,
+            "left":937,
+            "surroundings":%w[]
+        },
+        {
+            "id":174,
+            "top":3300,
+            "left":977,
+            "surroundings":%w[]
+        },
+        {
+            "id":175,
+            "top":3302,
+            "left":1016,
+            "surroundings":%w[]
+        },
+        {
+            "id":176,
+            "top":3353,
+            "left":987,
+            "surroundings":%w[]
+        },
+        {
+            "id":177,
+            "top":3313,
+            "left":559,
+            "surroundings":%w[]
+        },
+        {
+            "id":178,
+            "top":3461,
+            "left":1116,
+            "surroundings":%w[]
+        },
+        {
+            "id":179,
+            "top":3458,
+            "left":1239,
+            "surroundings":%w[]
+        },
+        {
+            "id":180,
+            "top":3400,
+            "left":1237,
+            "surroundings":%w[]
+        },
+        {
+            "id":181,
+            "top":3535,
+            "left":1242,
             "surroundings":%w[]
         },
     ]

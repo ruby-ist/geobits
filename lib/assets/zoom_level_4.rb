@@ -512,7 +512,7 @@ def place_tags
         "left": "2255px"
       },
       {
-        "id": "reserach-park",
+        "id": "research-park",
         "name": "Research Park",
         "top": "1290px",
         "left": "1955px"
