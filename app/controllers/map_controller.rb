@@ -85,9 +85,14 @@ class MapController < ApplicationController
   end
 
   def direction
-    load "#{Rails.root}/lib/assets/junction_points.rb"
+    params["type"] ||= "pedestrian"
+    if params["type"] == "pedestrian"
+      load "#{Rails.root}/lib/assets/junction_points.rb"
+    elsif params["type"] == "vehicle"
+      load "#{Rails.root}/lib/assets/vehicle_junction_points.rb"
+    end
     points = junctions
-    graph = Map.new
+    graph = Map.new params["type"]
 
     if params["from"] == 'my-location'
       from = graph.nearest_junction(params["my-left"].to_i, params["my-top"].to_i)

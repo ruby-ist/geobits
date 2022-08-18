@@ -1,14 +1,26 @@
 module MapHelper
     class Map
+        def initialize(type)
+            @type = type
+        end
+
         def route(src, des)
-            load "#{Rails.root}/lib/assets/edges.rb"
+            if @type == "pedestrian"
+                load "#{Rails.root}/lib/assets/edges.rb"
+            elsif @type == "vehicle"
+                load "#{Rails.root}/lib/assets/vehicle_edges.rb"
+            end
             edges = calculated_edges
             graph = Dijkstra::Trace.new(edges)
             process_path graph.path(src,des)
         end
 
         def process_path(path)
-            load "#{Rails.root}/lib/assets/junction_points.rb"
+            if @type == "pedestrian"
+                load "#{Rails.root}/lib/assets/junction_points.rb"
+            elsif @type == "vehicle"
+                load "#{Rails.root}/lib/assets/vehicle_junction_points.rb"
+            end
             points = junctions
             first = points.find{|i| i[:id] == path.path.first}
             last = points.find{|i| i[:id] == path.path.last}
@@ -37,7 +49,11 @@ module MapHelper
         end
 
         def nearest_junction(long, lat)
-            load "#{Rails.root}/lib/assets/junction_points.rb"
+            if @type == "pedestrian"
+                load "#{Rails.root}/lib/assets/junction_points.rb"
+            elsif @type == "vehicle"
+                load "#{Rails.root}/lib/assets/vehicle_junction_points.rb"
+            end
             points = junctions
             min = 9999999
             id = 0
