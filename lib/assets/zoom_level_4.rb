@@ -310,8 +310,8 @@ def place_tags
       {
         "id": "boys-laundry",
         "name": "Laundry (Boys)",
-        "top": "2897px",
-        "left": "2075px"
+        "top": "2890px",
+        "left": "2095px"
       },
       {
         "id": "power-house",
@@ -393,7 +393,7 @@ def place_tags
       },
       {
         "id": "kaveri",
-        "name": "kaveri Hostel",
+        "name": "Cauvery Hostel",
         "top": "3405px",
         "left": "640px"
       },
@@ -423,9 +423,9 @@ def place_tags
       },
       {
         "id": "middle-bhavani",
-        "name": "Middle Bhavani",
-        "top": "3445px",
-        "left": "1265px"
+        "name": "Old Bhavani",
+        "top": "3435px",
+        "left": "1245px"
       },
       {
         "id": "south-bhavani",
@@ -574,7 +574,7 @@ def place_tags
       {
           "id": "boys-canteen",
           "name": "Canteens (boys)",
-          "top": "2951px",
+          "top": "2965px",
           "left": "2062px"
       },
       {
@@ -588,6 +588,54 @@ def place_tags
           "name": "Visitors Hut (Girls)",
           "top": "2903px",
           "left": "773px"
+      },
+      {
+          "id": "parlour-boys",
+          "name": "Parlour (Boys)",
+          "top": "2922px",
+          "left": "2023px"
+      },
+      {
+          "id": "canteen-girls",
+          "name": "Canteen (Girls)",
+          "top": "2993px",
+          "left": "744px"
+      },
+      {
+          "id": "laundry-girls",
+          "name": "Laundry (Girls)",
+          "top": "3468px",
+          "left": "1308px"
+      },
+      {
+          "id": "parlour-girls",
+          "name": "Parlour (Girls)",
+          "top": "3499px",
+          "left": "837px"
+      },
+      {
+          "id": "outdoor-gym-2",
+          "name": "Outdoor Gym",
+          "top": "3350px",
+          "left": "868px"
+      },
+      {
+          "id": "outdoor-gym-3",
+          "name": "Outdoor Gym",
+          "top": "3345px",
+          "left": "1058px"
+      },
+      {
+          "id": "throwball-court-girls",
+          "name": "Throw Ball Court",
+          "top": "3180px",
+          "left": "871px"
+      },
+      {
+          "id": "volleyball-court-girls",
+          "name": "Volley Ball Court",
+          "top": "3173px",
+          "left": "1019px"
       },
     ]
   }

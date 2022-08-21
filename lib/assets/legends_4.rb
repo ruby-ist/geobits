@@ -123,8 +123,8 @@ def place_legends
     {
       id: "laundry-icon-2",
       link: ActionController::Base.helpers.image_path("laundry.svg"),
-      top: "3450px",
-      left: "890px"
+      top: "3445px",
+      left: "1301px"
     },
     {
       id: "xerox-icon-1",
@@ -195,8 +195,8 @@ def place_legends
     {
       id: "snack-icon-5",
       link: ActionController::Base.helpers.image_path("snacks.svg"),
-      top: "2970px",
-      left: "740px"
+      top: "2975px",
+      left: "755px"
     },
     {
       id: "sapphire-icon",
@@ -261,8 +261,32 @@ def place_legends
     {
       id: "Bhavani-icon",
       link: ActionController::Base.helpers.image_path("hostel.svg"),
-      top: "3475px",
-      left: "1275px"
+      top: "3470px",
+      left: "1265px"
+    },
+    {
+        id: "North-bhavani-icon",
+        link: ActionController::Base.helpers.image_path("hostel.svg"),
+        top: "3363px",
+        left: "1190px"
+    },
+    {
+        id: "South-bhavani-icon",
+        link: ActionController::Base.helpers.image_path("hostel.svg"),
+        top: "3546px",
+        left: "1207px"
+    },
+    {
+        id: "Parlour-icon-1",
+        link: ActionController::Base.helpers.image_path("parlour.svg"),
+        top: "2906px",
+        left: "2067px"
+    },
+    {
+        id: "Parlour-icon-2",
+        link: ActionController::Base.helpers.image_path("parlour.svg"),
+        top: "3497px",
+        left: "812px"
     },
   ]
 end

@@ -412,7 +412,7 @@ def junctions
             "id":69,
             "top":2969,
             "left":2085,
-            "surroundings":%w[boys-canteen]
+            "surroundings":%w[boys-canteen parlour-boys]
         },
         {
             "id":70,
@@ -904,7 +904,7 @@ def junctions
             "id":151,
             "top":2845,
             "left":965,
-            "surroundings":%w[girls-hostels narmadha ganga girls-basketball-court yamuna kaveri girls-mess north-bhavani middle-bhavani south-bhavani]
+            "surroundings":%w[girls-hostels]
         },
         {
             "id":152,
@@ -993,8 +993,8 @@ def junctions
         {
             "id":166,
             "top":3008,
-            "left":851,
-            "surroundings":%w[]
+            "left":783,
+            "surroundings":%w[canteen-girls]
         },
         {
             "id":167,
@@ -1004,33 +1004,33 @@ def junctions
         },
         {
             "id":168,
-            "top":3117,
+            "top":3134,
             "left":515,
             "surroundings":%w[]
         },
         {
             "id":169,
-            "top":2993,
-            "left":1316,
-            "surroundings":%w[]
+            "top":3135,
+            "left":562,
+            "surroundings":%w[narmadha]
         },
         {
             "id":170,
             "top":3272,
             "left":928,
-            "surroundings":%w[]
+            "surroundings":%w[throwball-court-girls]
         },
         {
             "id":171,
             "top":3270,
             "left":974,
-            "surroundings":%w[]
+            "surroundings":%w[girls-basketball-court]
         },
         {
             "id":172,
             "top":3269,
             "left":1015,
-            "surroundings":%w[]
+            "surroundings":%w[volleyball-court-girls]
         },
         {
             "id":173,
@@ -1058,8 +1058,8 @@ def junctions
         },
         {
             "id":177,
-            "top":3313,
-            "left":559,
+            "top":3312,
+            "left":563,
             "surroundings":%w[]
         },
         {
@@ -1072,18 +1072,138 @@ def junctions
             "id":179,
             "top":3458,
             "left":1239,
-            "surroundings":%w[]
+            "surroundings":%w[middle-bhavani laundry-girls]
         },
         {
             "id":180,
             "top":3400,
             "left":1237,
-            "surroundings":%w[]
+            "surroundings":%w[north-bhavani]
         },
         {
             "id":181,
             "top":3535,
             "left":1242,
+            "surroundings":%w[south-bhavani]
+        },
+        {
+            "id": 182,
+            "top":3302,
+            "left":826,
+            "surroundings":%w[]
+        },
+        {
+            "id":183,
+            "top":3403,
+            "left":830,
+            "surroundings":%w[kaveri]
+        },
+        {
+            "id":184,
+            "top":3511,
+            "left":879,
+            "surroundings":%w[parlour-girls]
+        },
+        {
+            "id":185,
+            "top":3309,
+            "left":910,
+            "surroundings":%w[]
+        },
+        {
+            "id":186,
+            "top":3396,
+            "left":990,
+            "surroundings":%w[girls-mess]
+        },
+        {
+            "id":187,
+            "top":3356,
+            "left":909,
+            "surroundings":%w[]
+        },
+        {
+            "id":188,
+            "top":3351,
+            "left":1071,
+            "surroundings":%w[]
+        },
+        {
+            "id":189,
+            "top":3391,
+            "left":1072,
+            "surroundings":%w[]
+        },
+        {
+            "id":190,
+            "top":3390,
+            "left":1122,
+            "surroundings":%w[outdoor-gym-3]
+        },
+        {
+            "id":191,
+            "top":3124,
+            "left":871,
+            "surroundings":%w[]
+        },
+        {
+            "id":192,
+            "top":3124,
+            "left":821,
+            "surroundings":%w[]
+        },
+        {
+            "id":193,
+            "top":3112,
+            "left":1075,
+            "surroundings":%w[]
+        },
+        {
+            "id":194,
+            "top":3110,
+            "left":1255,
+            "surroundings":%w[]
+        },
+        {
+            "id":195,
+            "top":3093,
+            "left":1174,
+            "surroundings":%w[]
+        },
+        {
+            "id":196,
+            "top":3253,
+            "left":1121,
+            "surroundings":%w[]
+        },
+        {
+            "id":197,
+            "top":3400,
+            "left":874,
+            "surroundings":%w[outdoor-gym-2]
+        },
+        {
+            "id":198,
+            "top":3210,
+            "left":817,
+            "surroundings":%w[ganga]
+        },
+        {
+            "id":199,
+            "top":3183,
+            "left":1255,
+            "surroundings":%w[]
+        },
+        {
+            "id":200,
+            "top":3240,
+            "left":1253,
+            "surroundings":%w[yamuna]
+        },
+        {
+            "id":201,
+            "top":3241,
+            "left":1133,
             "surroundings":%w[]
         },
     ]
