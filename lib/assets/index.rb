@@ -832,6 +832,24 @@ def guides
               },
           ]
       },
+
+      {
+          "id": "recreation-hall",
+          "name": "Recreation Hall",
+          "main": "Cafeteria",
+          "about": "",
+          "terms": ["shop", "store", "gift", "mobile"],
+          "floors": [
+              {
+                  "name": "Ground Floor",
+                  "rooms": ["Conventional Store", "Gift Shop", "Mobile Shop"]
+              },
+              {
+                  "name": "First Floor",
+                  "rooms": ["Recreation Hall"]
+              },
+          ]
+      },
     ]
   }
 end
