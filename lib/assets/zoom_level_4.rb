@@ -637,6 +637,18 @@ def place_tags
           "top": "3173px",
           "left": "1019px"
       },
+      {
+          "id": "girls-gym",
+          "name": "Girls Gym",
+          "top": "3415px",
+          "left": "1018px"
+      },
+      {
+          "id": "dance-hall",
+          "name": "Dance Hall",
+          "top": "3414px",
+          "left": "919px"
+      },
     ]
   }
 end

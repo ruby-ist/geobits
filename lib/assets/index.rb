@@ -850,6 +850,24 @@ def guides
               },
           ]
       },
+
+      {
+          "id": "girls-mess",
+          "name": "Mess",
+          "main": "Girls Mess",
+          "about": "",
+          "terms": [],
+          "floors": [
+              {
+                  "name": "Ground Floor",
+                  "rooms": ["Mess"]
+              },
+              {
+                  "name": "First Floor",
+                  "rooms": ["Dance Hall", "Girls Gym", "Mess"]
+              },
+          ]
+      },
     ]
   }
 end

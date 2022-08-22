@@ -358,7 +358,7 @@ def junctions
         { :id => 151,
           :top => 2845,
           :left => 965,
-          :surroundings => %w[girls-hostels canteen-girls laundry-girls parlour-girls outdoor-gym-2 outdoor-gym-3 throwball-court-girls volleyball-court-girls narmadha ganga girls-basketball-court yamuna kaveri girls-mess north-bhavani middle-bhavani south-bhavani]
+          :surroundings => %w[girls-hostels canteen-girls laundry-girls parlour-girls outdoor-gym-2 outdoor-gym-3 throwball-court-girls volleyball-court-girls dance-hall girls-gym narmadha ganga girls-basketball-court yamuna kaveri girls-mess north-bhavani middle-bhavani south-bhavani]
         },
         { :id => 152,
           :top => 2850,

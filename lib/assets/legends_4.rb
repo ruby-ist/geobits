@@ -288,6 +288,12 @@ def place_legends
         top: "3497px",
         left: "812px"
     },
+    {
+        id: "Gym-icon-2",
+        link: ActionController::Base.helpers.image_path("gym.svg"),
+        top: "3378px",
+        left: "1013px"
+    },
   ]
 end
 

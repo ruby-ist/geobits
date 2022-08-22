@@ -1114,7 +1114,7 @@ def junctions
             "id":186,
             "top":3396,
             "left":990,
-            "surroundings":%w[girls-mess]
+            "surroundings":%w[girls-mess dance-hall girls-gym]
         },
         {
             "id":187,
