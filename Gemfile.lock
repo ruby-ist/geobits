@@ -123,6 +123,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
+    pg (1.4.4)
     puma (5.6.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -199,6 +200,7 @@ DEPENDENCIES
   dijkstra_trace (~> 0.0.2)
   importmap-rails
   jbuilder
+  pg
   puma (~> 5.0)
   rack-cors (~> 1.1)
   rails (~> 7.0.0)
