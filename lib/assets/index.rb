@@ -18,7 +18,7 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["CS 201", "CS 202", "CS 203", "Department of Computer Science and Engineering", "CSE Lab 1"]
+            "rooms": ["CS 201", "CS 202 💞", "CS 203", "Department of Computer Science and Engineering", "CSE Lab 1"]
           },
           {
             "name": "Second Floor",
@@ -166,11 +166,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["CE 21", "CE 22", "CE 23"]
+            "rooms": ["EW 113", "EW 114", "EW 115"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["CE 31", "CE 32", "CE 33"]
+            "rooms": ["EW 213", "EW 214", "EW 215"]
           }
         ]
       },
@@ -210,11 +210,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["CE 24", "CE 25", "CE 26"]
+            "rooms": ["EW 116", "EW 117", "EW 118"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["CE 34", "CE 35", "CE 36"]
+            "rooms": ["EW 216", "EW 217", "EW 218"]
           }
         ]
       },
@@ -254,11 +254,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["EC 21", "EC 22", "EC 23"]
+            "rooms": ["EW 107", "EW 108 ❤️‍🩹", "EW 109"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["EC 31", "EC 32", "EC 33"]
+            "rooms": ["EW 207", "EW 208", "EW 209"]
           }
         ]
       },
@@ -298,11 +298,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["Faculty Hall 3", "EC 25", "EC 26"]
+            "rooms": ["Faculty Hall 3", "EW 111", "EW 112"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["EC 34", "EC 35", "EC 36"]
+            "rooms": ["EW 210", "EW 211", "EW 212"]
           }
         ]
       },
@@ -342,11 +342,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["TT 21", "TT 22", "TT 23"]
+            "rooms": ["EW 101", "EW 102", "EW 103"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["TT 31", "TT 32", "TT 33"]
+            "rooms": ["EW 201", "EW 202", "EW 203"]
           }
         ]
       },
@@ -386,11 +386,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["TT 24", "TT 25", "TT 26"]
+            "rooms": ["EW 104", "EW 105", "EW 106"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["TT 34", "TT 35", "TT 36"]
+            "rooms": ["EW 204", "EW 205", "EW 206"]
           }
         ]
       },
@@ -462,7 +462,7 @@ def guides
         "floors": [
           {
             "name": "Ground Floor",
-            "rooms": ["Department of Mathematics", "IB 101", "IB 102", "IB 103", "IB 104", "Maths Faculty Hall - 1", "Maths Faculty Hall -2", "Biotech Seminar Hall"]
+            "rooms": ["Department of Mathematics", "IB 101 (left as it is in remainder of old names)", "WW 002", "WW 003", "WW 004", "Maths Faculty Hall - 1", "Maths Faculty Hall - 2", "Biotech Seminar Hall"]
           },
           {
             "name": "First Floor",
@@ -470,7 +470,7 @@ def guides
           },
           {
             "name": "Second Floor",
-            "rooms": ["IB 201", "IB 202", "IB 203", "IB 204", "IB 205", "IB 206", "Maths Faculty Hall - 5"]
+            "rooms": ["WW 216", "WW 217", "WW 218", "WW 219", "WW 220", "WW 221", "Maths Faculty Hall - 5"]
           }
         ]
       },
@@ -484,7 +484,7 @@ def guides
         "floors": [
           {
             "name": "Ground Floor",
-            "rooms": ["IB 105", "IB 106", "IB 107", "IB 108", "IB 109", "IB 110", "IB 111", "IB 112", "Bio-process and Bio-product Lab", "BIT Integrated Plant Research Facility", "Bio Energy Research Lab"]
+            "rooms": ["WW 005", "WW 006", "WW 007", "WW 008", "WW 010", "WW 011", "WW 012", "Bio-process and Bio-product Lab", "BIT Integrated Plant Research Facility", "Bio Energy Research Lab"]
           },
           {
             "name": "First Floor",
@@ -492,7 +492,7 @@ def guides
           },
           {
             "name": "Second Floor",
-            "rooms": ["IB 207", "IB 208", "IB 210", "IB 211", "IB 212", "Maths Faculty Hall - 6"]
+            "rooms": ["WW 222", "WW 223", "WW 224", "WW 225", "WW 226", "WW 227", "Maths Faculty Hall - 6"]
           }
         ]
       },
@@ -510,11 +510,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["CT 21", "CT 22", "CT 23"]
+            "rooms": ["WW 113", "WW 114", "WW 115"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["AIDS 32", "AIDS 31"]
+            "rooms": ["WW 212", "WW 211"]
           }
         ]
       },
@@ -554,11 +554,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["CT 24", "CT 25", "CT 26", "CT Faculty Hall 4"]
+            "rooms": ["WW 117", "WW 118", "CT Faculty Hall 4"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["AIDS 33", "AIDS 34", "AIDS 35"]
+            "rooms": ["WW 213", "WW 214", "WW 215"]
           }
         ]
       },
@@ -598,11 +598,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["EE 21", "EE 22", "EE 23"]
+            "rooms": ["WW 107", "WW 108", "WW 109"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["EE 32", "EE 31"]
+            "rooms": ["WW 207", "WW 206"]
           }
         ]
       },
@@ -642,11 +642,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["EE 24", "EE 25", "EE 26"]
+            "rooms": ["WW 110", "WW 111", "WW 112"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["EE 33", "EE 34", "EE 35"]
+            "rooms": ["WW 208", "WW 209", "WW 210"]
           }
         ]
       },
@@ -686,11 +686,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["AG 21", "AG 22", "AG 23"]
+            "rooms": ["WW 101", "WW 102", "WW 103"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["AG 31", "AG 32"]
+            "rooms": ["WW 201", "WW 202"]
           }
         ]
       },
@@ -730,11 +730,11 @@ def guides
           },
           {
             "name": "First Floor",
-            "rooms": ["AG 24", "AG 25", "AG 26"]
+            "rooms": ["WW 104 💝", "WW 105", "WW 106"]
           },
           {
             "name": "Second Floor",
-            "rooms": ["AG 33", "AG 34", "AG 35"]
+            "rooms": ["WW 203", "WW 204", "WW 205"]
           }
         ]
       },
